@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>2D</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        html,
+        body,
+        #main,
+        #map {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: padding-left .5s;
+            transition: padding-right .5s;
+        }
+
+        #tags {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transition: left .5s;
+        }
+
+        #toolbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(42, 42, 42, 0.8);
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        #toolbar .header {
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #toolbar td {
+            color: aliceblue;
+        }
+
+        .ui-autocomplete {
+            max-height: 100px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        * html .ui-autocomplete {
+            height: 100px;
+        }
+
+        #project-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        #project-icon {
+            float: left;
+            height: 32px;
+            width: 32px;
+        }
+
+        #project-description {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: 0.5s;
+            /* padding-top: 60px; */
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        } */
+
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        .sidenav-right {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: 0.5s;
+            /* padding-top: 60px; */
+        }
+
+        .sidenav-right a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav-right a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav-right .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav-right {
+                padding-top: 15px;
+            }
+
+            .sidenav-right a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<script>
+
+</script>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <div class="d-flex justify-content-between align-items-center">
+            <p style="padding: 8px;margin: 0;">Thông tin tài sản</p>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+
+
+        <div style="margin: 12px;" id="thongTinTaiSan">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <table
+                                style="border-collapse: collapse;border-top: 1px solid #e9ecef;margin-top: 5px;width: 100%;">
+                                <tr style="border-bottom: 1px solid #e9ecef;">
+                                    <th style="float:left;font-weight: 500;padding:5px 10px">${i}</th>
+                                    <td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav-right" class="sidenav-right">
+        <div class="d-flex justify-content-between align-items-center">
+            <p style="padding: 8px;margin: 0;">Thống kê hố khoan</p>
+            <a href="javascript:void(0)" class="closebtn-right" onclick="closeNavRight()">&times;</a>
+        </div>
+        <div style="margin: 12px;" id="thongKeHoKhoan">
+            <div id="chartContainer" style="height: 370px; width: 580px;"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="map"></div>
+        <div id="tags">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1" style="
+            padding: 8px 8px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #fff;
+            border: 1px solid #fff;
+            border-radius: 0.375rem;">Tìm kiếm</span>
+                <input type="text" id="project" class="form-control" placeholder="Nhập tên hố khoan" style="
+            padding: 4px 8px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #fff;
+            appearance: none;
+            border-radius: 0.375rem;" aria-describedby="basic-addon1">
+                <a href="./" class="input-group-text" id="basic-addon1" style="
+              padding: 8px 8px;
+              font-size: 1rem;
+              font-weight: 600;
+              line-height: 1.5;
+              color: rgb(252, 151, 0);
+              text-align: center;
+              white-space: nowrap;
+              background-color: rgba(0, 0, 0, 0.397);
+              border: 1px solid #fff;
+              border-radius: 0.375rem;
+              text-decoration: none;">3D</a>
+            </div>
+        </div>
+        <div id="toolbar">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Quận huyện Hà Nội</td>
+                        <td>
+                            <input type="checkbox" onclick="btQuanHuyenHN(this)" checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Đường ống cấp nước</td>
+                        <td>
+                            <input type="checkbox" onclick="btDuongOngCapNuoc(this)" checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Đường ống thoát nước</td>
+                        <td>
+                            <input type="checkbox" onclick="btDuongOngThoatNuoc(this)" checked>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hố khoan</td>
+                        <td>
+                            <input type="checkbox" onclick="btHoKhoan(this)" checked>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "400px";
+            document.getElementById("main").style.paddingLeft = "400px";
+            document.getElementById("tags").style.left = "420px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.paddingLeft = "0";
+            document.getElementById("tags").style.left = "20px";
+        }
+        function openNavRight() {
+            document.getElementById("mySidenav-right").style.width = "600px";
+            document.getElementById("main").style.paddingRight = "600px";
+            document.getElementById("toolbar").style.right = "620px";
+        }
+
+        function closeNavRight() {
+            document.getElementById("mySidenav-right").style.width = "0";
+            document.getElementById("main").style.paddingRight = "0";
+            document.getElementById("toolbar").style.right = "20px";
+        }
+        $(function () {
+            $.ajax(`http://localhost:4320/search/1`)
+                .done(function (result) {
+                    $("#project").autocomplete({
+                        minLength: 0,
+                        source: result.features,
+                        focus: function (event, ui) {
+                            // console.log('focus', ui.item);
+                            $("#project").val(ui.item.properties.name);
+                            return false;
+                        },
+                        select: function (event, ui) {
+                            $("#project").val(ui.item.properties.name);
+                            map.setCenter(ui.item.geometry.coordinates);
+                            map.setZoom(18);
+                            const coordinates = ui.item.geometry.coordinates.slice();
+                            var thongTinDoiTuong = {
+                                "Tên hố khoan": ui.item.properties.name,
+                                "Độ sâu": ui.item.properties.depth,
+                                "Độ cao": ui.item.properties.elevation
+                            };
+                            var html = '';
+                            var dem = 0;
+                            html += '<h3 style="margin:0">Thông tin tài sản</h3>';
+                            for (const i in thongTinDoiTuong) {
+                                if (i != 'gid' && i != 'lat' && i != 'long' && i != 'geom') {
+                                    dem++;
+                                    if (dem % 2 != 0) {
+                                        html += `<tr style="border-bottom: 1px solid #e9ecef;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                                    } else {
+                                        html += `<tr style="border-bottom: 1px solid #e9ecef;background: #fcfcfc;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                                    }
+                                }
+                            }
+
+                            new mapboxgl.Popup()
+                                .setLngLat(coordinates)
+                                .setHTML(`<table style="border-collapse: collapse;border-top: 1px solid #e9ecef;margin-top: 5px;margin-left:-5px;margin-right:-5px">${html}</table>`)
+                                .addTo(map);
+                            return false;
+                        }
+                    })
+                        .autocomplete("instance")._renderItem = function (ul, item) {
+                            return $("<li>")
+                                .append("<div>" + item.properties.name + "</div>")
+                                .appendTo(ul);
+                        };
+                })
+                .fail(function (error) {
+                    console.log(error);
+                });
+        });
+        var duongOngNuocString = `<%= results.duongOngNuoc ? JSON.stringify(results.duongOngNuoc) : "{}" %>`
+        var duongOngNuoc = JSON.parse(duongOngNuocString.replace(/&#34;/g, '"'));
+        var loKhoanString = `<%= results.loKhoan ? JSON.stringify(results.loKhoan) : "{}" %>`
+        var loKhoan = JSON.parse(loKhoanString.replace(/&#34;/g, '"'));
+        var quanHuyenString = `<%= results.quanHuyen ? JSON.stringify(results.quanHuyen) : "{}" %>`
+        var quanHuyen = JSON.parse(quanHuyenString.replace(/&#34;/g, '"'));
+        var duongOngCapNuocString = `<%= results.duongOngCapNuoc ? JSON.stringify(results.duongOngCapNuoc) : "{}" %>`
+        var duongOngCapNuoc = JSON.parse(duongOngCapNuocString.replace(/&#34;/g, '"'));
+        var cauHinhHoKhoanString = `<%= results.cauHinhHoKhoan ? JSON.stringify(results.cauHinhHoKhoan) : "{}" %>`
+        var cauHinhHoKhoan = JSON.parse(cauHinhHoKhoanString.replace(/&#34;/g, '"'));
+        var chiTietHoKhoan = {}
+
+        function chuyenFormCapNhat() {
+            var html = '';
+            cauHinhHoKhoan.forEach(element => {
+                if (element.column_name != 'geom' && element.column_name != 'objectid_1') {
+                    html += `<div class="d-flex justify-content-between align-items-center">
+                    <p>${element.column_name}</p>
+                    <div class="input-group" style="width: 200px;">
+                        <input type="text" class="form-control" placeholder="${element.column_name}" name="${element.column_name}" value="${chiTietHoKhoan[element.column_name]}">
+                    </div>
+                </div>`;
+                    document.getElementById('thongTinTaiSan').innerHTML = `<form action="/capNhatTaiSan" method="post"> <button type="submit" class="btn btn-primary">Cập nhật</button>${html}<input type="hidden" name="objectid_1" value="${chiTietHoKhoan['objectid_1']}"></form>`;
+                }
+            });
+
+        }
+
+        var arrThongTinDoiTuong = [];
+        var arrToaDoHoKhoan = [];
+        loKhoan.features.forEach(element => {
+            if (element.geometry) {
+                if (element.geometry.coordinates) {
+                    arrToaDoHoKhoan.push(element.geometry.coordinates);
+                }
+            }
+
+        });
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoibnRkMTAxMDIwMDAiLCJhIjoiY2tvbzJ4anl1MDZjMzJwbzNpcnA5NXZpcCJ9.dePfFDv0RlCLnWoDq1zHlw';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            zoom: 14,
+            center: [105.849892, 21.009739],
+            // pitch: 80,
+            // bearing: 41,
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/mapbox/satellite-streets-v12'
+        });
+
+        map.on('style.load', () => {
+            map.addSource('mapbox-dem', {
+                'type': 'raster-dem',
+                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                'tileSize': 512,
+                'maxzoom': 14
+            });
+            // add the DEM source as a terrain layer with exaggerated height
+            map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+            map.addSource('quanHuyenHN', {
+                type: 'geojson',
+                data: quanHuyen
+            })
+            map.addLayer({
+                'id': 'quanHuyenHN',
+                'type': 'fill',
+                'source': 'quanHuyenHN',
+                'layout': {},
+                'paint': {
+                    'fill-color': '#ffc700',
+                    'fill-opacity': 0.2
+                }
+            });
+            map.addLayer({
+                'id': 'outline-quanHuyenHN',
+                'type': 'line',
+                'source': 'quanHuyenHN',
+                'layout': {},
+                'paint': {
+                    'line-color': '#ffc700',
+                    'line-width': 3
+                }
+            });
+            map.on('click', 'quanHuyenHN', (e) => {
+                openNavRight()
+                var points = turf.points(arrToaDoHoKhoan);
+                var searchWithin = turf.polygon(e.features[0].geometry.coordinates);
+                var ptsWithin = turf.pointsWithinPolygon(points, searchWithin);
+                console.log(ptsWithin);
+                var dataChart = [];
+                ptsWithin.features.map((element, key) => {
+                    loKhoan.features.map((el, k) => {
+                        if (el.geometry) {
+                            if (el.geometry.coordinates) {
+                                if (element.geometry.coordinates == el.geometry.coordinates) {
+                                    dataChart.push({
+                                        x: key, y: el.properties.depth
+                                    })
+                                }
+                            }
+                        }
+
+
+                    });
+
+                });
+                console.log(dataChart);
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    // title: {
+                    //     text: "Try Dragging Any Column to Resize"
+                    // },
+                    axisX: {
+                        minimum: 0,
+                        maximum: dataChart.length + 1
+                    },
+                    data: [{
+                        type: "column",
+                        dataPoints: dataChart
+                    }]
+                });
+                chart.render();
+
+                var xSnapDistance = chart.axisX[0].convertPixelToValue(chart.get("dataPointWidth")) / 2;
+                var ySnapDistance = 3;
+
+                var xValue, yValue;
+
+                var mouseDown = false;
+                var selected = null;
+                var changeCursor = false;
+
+                var timerId = null;
+
+                function getPosition(e) {
+                    var parentOffset = $("#chartContainer > .canvasjs-chart-container").offset();
+                    var relX = e.pageX - parentOffset.left;
+                    var relY = e.pageY - parentOffset.top;
+                    xValue = Math.round(chart.axisX[0].convertPixelToValue(relX));
+                    yValue = Math.round(chart.axisY[0].convertPixelToValue(relY));
+                }
+
+                function searchDataPoint() {
+                    var dps = chart.data[0].dataPoints;
+                    for (var i = 0; i < dps.length; i++) {
+                        if ((xValue >= dps[i].x - xSnapDistance && xValue <= dps[i].x + xSnapDistance) && (yValue >= dps[i].y - ySnapDistance && yValue <= dps[i].y + ySnapDistance)) {
+                            if (mouseDown) {
+                                selected = i;
+                                break;
+                            } else {
+                                changeCursor = true;
+                                break;
+                            }
+                        } else {
+                            selected = null;
+                            changeCursor = false;
+                        }
+                    }
+                }
+
+                jQuery("#chartContainer > .canvasjs-chart-container").on({
+                    mousedown: function (e) {
+                        mouseDown = true;
+                        getPosition(e);
+                        searchDataPoint();
+                    },
+                    mousemove: function (e) {
+                        getPosition(e);
+                        if (mouseDown) {
+                            clearTimeout(timerId);
+                            timerId = setTimeout(function () {
+                                if (selected != null) {
+                                    chart.data[0].dataPoints[selected].y = yValue;
+                                    chart.render();
+                                }
+                            }, 0);
+                        }
+                        else {
+                            searchDataPoint();
+                            if (changeCursor) {
+                                chart.data[0].set("cursor", "n-resize");
+                            } else {
+                                chart.data[0].set("cursor", "default");
+                            }
+                        }
+                    },
+                    mouseup: function (e) {
+                        if (selected != null) {
+                            chart.data[0].dataPoints[selected].y = yValue;
+                            chart.render();
+                            mouseDown = false;
+                        }
+                    }
+                });
+                // const coordinates = e.features[0].geometry.coordinates[0][0].slice();
+                // var thongTinDoiTuong = e.features[0].properties;
+                // var html = '';
+                // var dem = 0;
+                // html += '<h3 style="margin:0">Thông tin tài sản</h3>';
+                // for (const i in thongTinDoiTuong) {
+                //     if (i != 'gid' && i != 'lat' && i != 'long' && i != 'geom') {
+                //         dem++;
+                //         if (dem % 2 != 0) {
+                //             html += `<tr style="border-bottom: 1px solid #e9ecef;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                //         } else {
+                //             html += `<tr style="border-bottom: 1px solid #e9ecef;background: #fcfcfc;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                //         }
+                //     }
+                // }
+                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                // }
+                // new mapboxgl.Popup()
+                //     .setLngLat(coordinates)
+                //     .setHTML(`<div style="overflow-x:auto;height:200px !important"><table style="border-collapse: collapse;border-top: 1px solid #e9ecef;margin-top: 5px;margin-left:-5px;margin-right:-5px">${html}</table></div>`)
+                //     .addTo(map);
+            });
+
+            map.on('mouseenter', 'quanHuyenHN', () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'quanHuyenHN', () => {
+                map.getCanvas().style.cursor = '';
+            });
+
+            map.addSource('hoKhoan', {
+                type: 'geojson',
+                data: loKhoan
+            })
+            map.addLayer({
+                id: 'hoKhoan',
+                type: 'circle',
+                source: 'hoKhoan',
+                paint: {
+                    "circle-color": '#50cd89',
+                    "circle-radius": 6
+                }
+            })
+            map.on('click', 'hoKhoan', (e) => {
+                var mapLayerAnhTongTrai = map.getLayer('points');
+                chiTietHoKhoan = e.features[0].properties;
+                if (typeof mapLayerAnhTongTrai !== 'undefined') {
+                    map.removeLayer('points').removeSource('points').removeImage('points');
+                }
+                var pointGeojson = {
+                    'type': 'FeatureCollection',
+                    'features': [
+                        {
+                            'type': 'Feature',
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': e.features[0].geometry.coordinates
+                            },
+                            'properties': e.features[0].properties
+                        },
+                    ]
+                }
+                var thongTinDoiTuong = e.features[0].properties;
+                var html = '';
+                var dem = 0;
+                for (const i in thongTinDoiTuong) {
+                    if (i != 'gid' && i != 'lat' && i != 'long' && i != 'geom') {
+                        dem++;
+                        if (dem % 2 != 0) {
+                            html += `<tr style="border-bottom: 1px solid #e9ecef;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                        } else {
+                            html += `<tr style="border-bottom: 1px solid #e9ecef;background: #fcfcfc;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                        }
+                    }
+                }
+
+                document.getElementById('thongTinTaiSan').innerHTML = `<button type="button" class="btn btn-primary" onclick="chuyenFormCapNhat()">Cập nhật</button><table style="border-collapse: collapse;border-top: 1px solid #e9ecef;margin-top: 5px;width: 100%;">${html}</table>`;
+                map.loadImage(
+                    'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+                    (error, image) => {
+                        if (error) throw error;
+                        map.addImage('points', image);
+                        map.addSource('points', {
+                            'type': 'geojson',
+                            'data': pointGeojson
+                        });
+
+                        map.addLayer({
+                            'id': 'points',
+                            'type': 'symbol',
+                            'source': 'points',
+                            'layout': {
+                                'icon-image': 'points',
+                                'icon-offset': [0, -19]
+                            }
+                        });
+                    }
+                );
+                openNav();
+
+            });
+
+            map.on('mouseenter', 'hoKhoan', () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'hoKhoan', () => {
+                map.getCanvas().style.cursor = '';
+            });
+
+            map.addSource('duongOngThoatNuoc', {
+                type: 'geojson',
+                data: duongOngNuoc
+            })
+            map.addLayer({
+                id: 'duongOngThoatNuoc',
+                type: 'line',
+                source: 'duongOngThoatNuoc',
+                paint: {
+                    "line-color": '#009ef7',
+                    "line-width": 3
+                }
+            })
+            map.on('click', 'duongOngThoatNuoc', (e) => {
+                arrThongTinDoiTuong.push(e.features[0])
+
+                // const coordinates = e.features[0].geometry.coordinates[0].slice();
+                // var thongTinDoiTuong = e.features[0].properties;
+                // var html = '';
+                // var dem = 0;
+                // html += '<h3 style="margin:0">Thông tin tài sản</h3>';
+                // for (const i in thongTinDoiTuong) {
+                //     if (i != 'gid' && i != 'lat' && i != 'long' && i != 'geom') {
+                //         dem++;
+                //         if (dem % 2 != 0) {
+                //             html += `<tr style="border-bottom: 1px solid #e9ecef;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                //         } else {
+                //             html += `<tr style="border-bottom: 1px solid #e9ecef;background: #fcfcfc;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                //         }
+                //     }
+                // }
+                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                // }
+                // new mapboxgl.Popup()
+                //     .setLngLat(coordinates)
+                //     .setHTML(`<div style="overflow-x:auto;height:200px !important"><table style="border-collapse: collapse;border-top: 1px solid #e9ecef;margin-top: 5px;margin-left:-5px;margin-right:-5px">${html}</table></div>`)
+                //     .addTo(map);
+            });
+
+            map.on('mouseenter', 'duongOngThoatNuoc', () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'duongOngThoatNuoc', () => {
+                map.getCanvas().style.cursor = '';
+            });
+            map.addSource('duongOngCapNuoc', {
+                type: 'geojson',
+                data: duongOngCapNuoc
+            })
+            map.addLayer({
+                id: 'duongOngCapNuoc',
+                type: 'line',
+                source: 'duongOngCapNuoc',
+                paint: {
+                    "line-color": '#f1416c',
+                    "line-width": 3
+                }
+            })
+            map.on('click', 'duongOngCapNuoc', (e) => {
+                arrThongTinDoiTuong.push(e.features[0])
+
+                // const coordinates = e.features[0].geometry.coordinates[0].slice();
+                // var thongTinDoiTuong = e.features[0].properties;
+                // var html = '';
+                // var dem = 0;
+                // html += '<h3 style="margin:0">Thông tin tài sản</h3>';
+                // for (const i in thongTinDoiTuong) {
+                //     if (i != 'gid' && i != 'lat' && i != 'long' && i != 'geom') {
+                //         dem++;
+                //         if (dem % 2 != 0) {
+                //             html += `<tr style="border-bottom: 1px solid #e9ecef;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                //         } else {
+                //             html += `<tr style="border-bottom: 1px solid #e9ecef;background: #fcfcfc;"><th style="float:left;font-weight: 500;padding:5px 10px">${i}</th><td style="float:right;padding:5px 10px">${thongTinDoiTuong[i]}</td></tr>`
+                //         }
+                //     }
+                // }
+                // while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                //     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                // }
+                // new mapboxgl.Popup()
+                //     .setLngLat(coordinates)
+                //     .setHTML(`<div style="overflow-x:auto;height:200px !important"><table style="border-collapse: collapse;border-top: 1px solid #e9ecef;margin-top: 5px;margin-left:-5px;margin-right:-5px">${html}</table></div>`)
+                //     .addTo(map);
+            });
+
+            map.on('mouseenter', 'duongOngCapNuoc', () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'duongOngCapNuoc', () => {
+                map.getCanvas().style.cursor = '';
+            });
+        });
+        const btQuanHuyenHN = async (e) => {
+            e.checked ? map.setLayoutProperty('quanHuyenHN', 'visibility', 'visible') : map.setLayoutProperty('quanHuyenHN', 'visibility', 'none');
+            e.checked ? map.setLayoutProperty(`outline-` + 'quanHuyenHN', 'visibility', 'visible') : map.setLayoutProperty(`outline-` + 'quanHuyenHN', 'visibility', 'none')
+
+        }
+        const btHoKhoan = async (e) => {
+            e.checked ? map.setLayoutProperty('hoKhoan', 'visibility', 'visible') : map.setLayoutProperty('hoKhoan', 'visibility', 'none');
+
+        }
+
+        const btDuongOngCapNuoc = async (e) => {
+            e.checked ? map.setLayoutProperty('duongOngCapNuoc', 'visibility', 'visible') : map.setLayoutProperty('duongOngCapNuoc', 'visibility', 'none');
+
+        }
+
+        const btDuongOngThoatNuoc = async (e) => {
+            e.checked ? map.setLayoutProperty('duongOngThoatNuoc', 'visibility', 'visible') : map.setLayoutProperty('duongOngThoatNuoc', 'visibility', 'none');
+        }
+
+        // map.on('click', (e) => {
+        //     console.log(e.features);
+        //     // map.on('click', 'quanHuyenHN', (e) => {
+        //     //     console.log(e)
+        //     // });
+        // });
+    </script>
+
+</body>
+
+</html>
