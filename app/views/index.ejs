@@ -113,7 +113,7 @@
 										"></div>
 								<span class="form-check-label" style="color: #fff;font-size: 14px;">Phường xã</span>
 							</div>
-							<div class="d-flex flex-row m-2 align-items-center">
+							<!-- <div class="d-flex flex-row m-2 align-items-center">
 								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
 									onclick="btVungNghienCuu(this)">
 								<div style="
@@ -126,7 +126,7 @@
 										"></div>
 								<span class="form-check-label" style="color: #fff;font-size: 14px;">Vùng nghiên
 									cứu</span>
-							</div>
+							</div> -->
 						</div>
 						<div>
 							<h3 class="text-gray-800 fw-bold" style="font-size: 16px;
@@ -197,8 +197,8 @@
 											margin-left: 8px;
 											transform: rotate(120deg);
 										 "></div>
-										<span class="form-check-label" style="color: #fff;font-size: 14px;">Cống bể kỹ
-											thuật</span>
+										<span class="form-check-label" style="color: #fff;font-size: 14px;">Tuynel cống
+											bể kỹ thuật</span>
 									</div>
 								</div>
 							</div>
@@ -262,7 +262,8 @@
 										margin-right: 8px;
 										border-radius: 4px;
 										"></div>
-								<span class="form-check-label" style="color: #fff;font-size: 14px;">Cấu trúc nền</span>
+								<span class="form-check-label" style="color: #fff;font-size: 14px;">Bản đồ cấu trúc
+									nền</span>
 							</div>
 							<div class="d-flex flex-row m-2 align-items-center">
 								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
@@ -547,7 +548,7 @@
 		var phuongXa = JSON.parse(phuongXaString.replace(/&#34;/g, '"'));
 		var vungNghienCuuString = `<%= results.vungNghienCuu ? JSON.stringify(results.vungNghienCuu) : "{}" %>`
 		var vungNghienCuu = JSON.parse(vungNghienCuuString.replace(/&#34;/g, '"'));
-		var cocKhoanNhoiString = `<%= results.cocKhoanNhoi ? JSON.stringify(results.cocKhoanNhoi) : "{}" %>`
+		var cocKhoanNhoiString = `<%= results.cocKhoanNhoi ? JSON.stringify(results.cocKhoanNhoi) : "{}" %>`;
 		var cocKhoanNhoi = JSON.parse(cocKhoanNhoiString.replace(/&#34;/g, '"'));
 		var cocKhoanNhoiToaCuTheString = `<%= results.cocKhoanNhoiToaCuThe ? JSON.stringify(results.cocKhoanNhoiToaCuThe) : "{}" %>`
 		var cocKhoanNhoiToaCuThe = JSON.parse(cocKhoanNhoiToaCuTheString.replace(/&#34;/g, '"'));
@@ -828,7 +829,7 @@
 			if (e.checked) {
 				quanHuyenSource.load(quanHuyen, {
 					stroke: Cesium.Color.YELLOW,
-					fill: Cesium.Color.YELLOW.withAlpha(0.1),
+					fill: Cesium.Color.YELLOW.withAlpha(0.0),
 					strokeWidth: 3,
 				}).then((dataSource) => {
 					const entities = dataSource.entities.values;
@@ -853,7 +854,7 @@
 			if (e.checked) {
 				phuongXaSource.load(phuongXa, {
 					stroke: Cesium.Color.AQUAMARINE,
-					fill: Cesium.Color.AQUAMARINE.withAlpha(0.1),
+					fill: Cesium.Color.AQUAMARINE.withAlpha(0.0),
 					strokeWidth: 3,
 				}).then((dataSource) => {
 					const entities = dataSource.entities.values;
@@ -874,30 +875,30 @@
 			}
 		}
 
-		const btVungNghienCuu = async (e) => {
-			if (e.checked) {
-				vungNghienCuuSource.load(vungNghienCuu, {
-					stroke: Cesium.Color.BURLYWOOD,
-					fill: Cesium.Color.BURLYWOOD.withAlpha(0.1),
-					strokeWidth: 3,
-				}).then((dataSource) => {
-					const entities = dataSource.entities.values;
-					for (let i = 0; i < entities.length; i++) {
-						const entity = entities[i];
-						entity.moTa = {
-							'Vùng nghiên cứu': 'Vùng nghiên cứu'
-						}
-						entity.polygon.height =
-							-15;
-					}
-				}).catch(function (error) {
-					window.alert(error);
-				});
-				viewer.dataSources.add(vungNghienCuuSource)
-			} else {
-				viewer.dataSources.remove(vungNghienCuuSource)
-			}
-		}
+		// const btVungNghienCuu = async (e) => {
+		// 	if (e.checked) {
+		// 		vungNghienCuuSource.load(vungNghienCuu, {
+		// 			stroke: Cesium.Color.BURLYWOOD,
+		// 			fill: Cesium.Color.BURLYWOOD.withAlpha(0.1),
+		// 			strokeWidth: 3,
+		// 		}).then((dataSource) => {
+		// 			const entities = dataSource.entities.values;
+		// 			for (let i = 0; i < entities.length; i++) {
+		// 				const entity = entities[i];
+		// 				entity.moTa = {
+		// 					'Vùng nghiên cứu': 'Vùng nghiên cứu'
+		// 				}
+		// 				entity.polygon.height =
+		// 					-15;
+		// 			}
+		// 		}).catch(function (error) {
+		// 			window.alert(error);
+		// 		});
+		// 		viewer.dataSources.add(vungNghienCuuSource)
+		// 	} else {
+		// 		viewer.dataSources.remove(vungNghienCuuSource)
+		// 	}
+		// }
 
 		const btCauTrucNen = async (e) => {
 			if (e.checked) {
@@ -1332,7 +1333,19 @@
 								material: Cesium.Color.fromCssColorString('#702af7')
 							},
 							moTa: {
-								'Chiều dài': element.properties.cdcoc,
+								'Mã': element.properties.ma,
+								'Tên gọi': element.properties.tengoi,
+								'Quận Huyện': element.properties.quanHuyen,
+								'Phường Xã': element.properties.phuongXa,
+								'Chủ đầu tư': element.properties.chudautu,
+								'Đơn vị cung cấp tài liệu': element.properties.dvccaptl,
+								'Đơn vị quản lý tài liệu': element.properties.dvquanlytl,
+								'Ngày nhập dữ liệu': element.properties.ngaynl,
+								'Người nhập dữ liệu': element.properties.nguoinl,
+								'Đường kính cọc': element.properties.dkcoc,
+								'Chiều dài cọc': element.properties.cdcoc,
+								'Chiều dài ở đầu cọc': element.properties.cdodaucoc,
+								'Chiều dài ở đáy cọc': element.properties.cdodaycoc,
 							}
 						});
 					}
@@ -1599,7 +1612,7 @@
 
 		const tilesset = viewer.scene.primitives.add(
 			new Cesium.Cesium3DTileset({
-				url: Cesium.IonResource.fromAssetId(1606283),
+				url: Cesium.IonResource.fromAssetId(1633013),
 			})
 		);
 		tilesset.readyPromise.then(function (tileset) {

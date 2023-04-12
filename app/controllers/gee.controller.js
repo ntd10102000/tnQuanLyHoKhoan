@@ -36,7 +36,7 @@ exports.homeUser = (req, res) => {
               SELECT row_to_json(fc) FROM (SELECT 'FeatureCollection' As type, 
              array_to_json(array_agg(f)) As features FROM (SELECT 'Feature' As type, 
              ST_AsGeoJSON(lg."geom")::json As geometry,
-             json_build_object('cdcoc', lg.cdcoc, 'gid', lg.gid, 'cdodaucoc', lg.cdodaucoc) As properties FROM cockhoannhoi As lg) As f)
+             row_to_json((lg.*)) As properties FROM cockhoannhoi As lg) As f)
               As fc;
               SELECT row_to_json(fc) FROM (SELECT 'FeatureCollection' As type, 
               array_to_json(array_agg(f)) As features FROM (SELECT 'Feature' As type, 
