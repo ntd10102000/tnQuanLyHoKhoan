@@ -1,0 +1,869 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.841319223, 21.007705853],
+            [105.841358901, 21.007702571]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 1,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587435.170214,
+        "ydiemdau": 2323230.60937,
+        "xdiemcuoi": 587439.295935,
+        "ydiemcuoi": 2323230.26783,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0000398135052994,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 4.1,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84131922300008, 21.00770585300006],
+              [105.84135890100004, 21.00770257100004]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.850927074, 21.003176753],
+            [105.85165903, 21.003063756],
+            [105.854944383, 21.00283109],
+            [105.85733608, 21.002753213],
+            [105.857905359, 21.002748692],
+            [105.858474109, 21.002772193],
+            [105.859040766, 21.002823649],
+            [105.861309082, 21.003046079]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 2,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 588436.401829,
+        "ydiemdau": 2322734.60667,
+        "xdiemcuoi": 589515.536822,
+        "ydiemcuoi": 2322725.92276,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.010413888906,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 1082.8,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.85092707400008, 21.003176753000048],
+              [105.85165903000006, 21.003063756000074],
+              [105.85494438300009, 21.00283109000003],
+              [105.85733608000004, 21.002753213000062],
+              [105.85790535900009, 21.00274869200007],
+              [105.85847410900004, 21.002772193000055],
+              [105.85904076600008, 21.00282364900005],
+              [105.86130908200005, 21.003046079000057]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.842685181, 20.997288082],
+            [105.845708895, 20.996492766],
+            [105.846887881, 20.996248608],
+            [105.848106667, 20.996056718],
+            [105.849921764, 20.995837449],
+            [105.856610064, 20.995115767],
+            [105.857005771, 20.995086676],
+            [105.857402683, 20.995084611],
+            [105.857798709, 20.995109585],
+            [105.860354664, 20.995614692],
+            [105.86935528, 20.998696607]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 3,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587583.21539,
+        "ydiemdau": 2322078.30044,
+        "xdiemcuoi": 590354.441021,
+        "ydiemcuoi": 2322249.04054,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0274293055038,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 2861.4,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84268518100004, 20.99728808200007],
+              [105.84570889500009, 20.996492766000074],
+              [105.84688788100004, 20.99624860800003],
+              [105.84810666700008, 20.996056718000034],
+              [105.84992176400004, 20.995837449000078],
+              [105.85661006400005, 20.995115767000073],
+              [105.85700577100005, 20.995086676000028],
+              [105.85740268300003, 20.99508461100004],
+              [105.85779870900006, 20.995109585000023],
+              [105.86035466400006, 20.99561469200006],
+              [105.86935528000004, 20.998696607000056]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.841358901, 21.007702571],
+            [105.842253818, 21.007665084],
+            [105.842989178, 21.007693474],
+            [105.843722055, 21.007756865],
+            [105.844450565, 21.007855093],
+            [105.849833065, 21.008626349],
+            [105.850201918, 21.008670885],
+            [105.850572595, 21.008699079],
+            [105.850944272, 21.008710868],
+            [105.852440906, 21.008672005],
+            [105.852963885, 21.008680575],
+            [105.853483917, 21.00873335],
+            [105.853996772, 21.008829898],
+            [105.855245601, 21.009082707],
+            [105.85609187, 21.009158568],
+            [105.856941462, 21.009186601],
+            [105.857791314, 21.009166704],
+            [105.861221968, 21.009051634]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 4,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587439.295935,
+        "ydiemdau": 2323230.26783,
+        "xdiemcuoi": 589502.900755,
+        "ydiemcuoi": 2323390.58185,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0199762451041,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 2077.8,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84135890100004, 21.00770257100004],
+              [105.84225381800007, 21.007665084000053],
+              [105.84298917800004, 21.007693474000064],
+              [105.84372205500006, 21.007756865000033],
+              [105.84445056500005, 21.007855093000046],
+              [105.84983306500004, 21.008626349000053],
+              [105.85020191800004, 21.008670885000072],
+              [105.85057259500007, 21.008699079000053],
+              [105.85094427200005, 21.008710868000037],
+              [105.85244090600008, 21.00867200500005],
+              [105.85296388500007, 21.008680575000028],
+              [105.85348391700006, 21.008733350000057],
+              [105.85399677200007, 21.008829898000045],
+              [105.85524560100004, 21.00908270700006],
+              [105.85609187000006, 21.009158568000032],
+              [105.85694146200007, 21.009186601000067],
+              [105.85779131400005, 21.00916670400005],
+              [105.86122196800005, 21.00905163400006]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.855057806, 21.018411204],
+            [105.85504649, 21.018376553],
+            [105.857849168, 21.013352907],
+            [105.860642463, 21.009874136]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 5,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 588856.707392,
+        "ydiemdau": 2324423.07876,
+        "xdiemcuoi": 589442.181732,
+        "ydiemcuoi": 2323481.2937,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.010250447131,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 1113.9,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.85505780600005, 21.018411204000074],
+              [105.85504649000006, 21.018376553000053],
+              [105.85784916800009, 21.01335290700007],
+              [105.86064246300003, 21.009874136000064]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.841426364, 21.017564426],
+            [105.851402013, 21.01680547],
+            [105.852955333, 21.016809745],
+            [105.855564796, 21.017223138]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 6,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587440.5592,
+        "ydiemdau": 2324321.83292,
+        "xdiemcuoi": 588910.100494,
+        "ydiemcuoi": 2324291.86313,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0141998093338,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 1476.6,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84142636400009, 21.017564426000035],
+              [105.85140201300004, 21.016805470000065],
+              [105.85295533300007, 21.016809745000046],
+              [105.85556479600007, 21.017223138000077]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.849000589, 21.008540568],
+            [105.849250011, 21.016958046],
+            [105.849309448, 21.018735764],
+            [105.849349067, 21.018852942]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 7,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 588233.018637,
+        "ydiemdau": 2323327.21923,
+        "xdiemcuoi": 588263.168658,
+        "ydiemcuoi": 2324468.80601,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0103235784784,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 1142.5,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84900058900007, 21.008540568000058],
+              [105.84925001100004, 21.01695804600007],
+              [105.84930944800004, 21.01873576400004],
+              [105.84934906700005, 21.018852942000024]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.847905612, 20.990577431],
+            [105.848948226, 20.991550112],
+            [105.849053663, 20.991657037],
+            [105.849149252, 20.991771836],
+            [105.84923433, 20.991893711],
+            [105.849308304, 20.992021817],
+            [105.849370663, 20.992155263],
+            [105.84942097, 20.992293122],
+            [105.849527522, 20.992710229],
+            [105.849562861, 20.993310965],
+            [105.849922118, 20.995840034]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 8,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 588129.760859,
+        "ydiemdau": 2321338.42263,
+        "xdiemcuoi": 588336.268591,
+        "ydiemcuoi": 2321922.00936,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.00590278396595,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 646,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84790561200003, 20.990577431000077],
+              [105.84894822600006, 20.991550112000027],
+              [105.84905366300006, 20.99165703700004],
+              [105.84914925200007, 20.991771836000055],
+              [105.84923433000006, 20.991893711000046],
+              [105.84930830400003, 20.992021817000023],
+              [105.84937066300006, 20.99215526300003],
+              [105.84942097000004, 20.992293122000035],
+              [105.84952752200007, 20.992710229000068],
+              [105.84956286100004, 20.993310965000035],
+              [105.84992211800005, 20.995840034000025]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.860642463, 21.009874136],
+            [105.860785647, 21.007620721],
+            [105.861309082, 21.003046079],
+            [105.862109826, 20.995771031],
+            [105.862459669, 20.992794485]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 9,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 589442.181732,
+        "ydiemdau": 2323481.2937,
+        "xdiemcuoi": 589641.244434,
+        "ydiemcuoi": 2321591.89965,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0171784677515,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 1900.1,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.86064246300003, 21.009874136000064],
+              [105.86078564700006, 21.007620721000023],
+              [105.86130908200005, 21.003046079000057],
+              [105.86210982600005, 20.99577103100006],
+              [105.86245966900009, 20.992794485000047]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.84141511, 21.020656952],
+            [105.844346822, 21.019762197],
+            [105.849309448, 21.018735764],
+            [105.851542348, 21.018338448]
+          ],
+          [
+            [105.851720867, 21.018306682],
+            [105.852891981, 21.018098283],
+            [105.854118281, 21.017916911],
+            [105.855021125, 21.018365801]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 10,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587437.586545,
+        "ydiemdau": 2324664.11345,
+        "xdiemcuoi": 588852.922229,
+        "ydiemcuoi": 2324418.03305,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0138382813052,
+        "phanloai": "Hào kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 2000,
+        "chieudai": 1443.7,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84141511000007, 21.020656952000024],
+              [105.84434682200003, 21.019762197000034],
+              [105.84930944800004, 21.01873576400004],
+              [105.85154234800007, 21.018338448000065]
+            ],
+            [
+              [105.85172086700004, 21.01830668200006],
+              [105.85289198100008, 21.01809828300003],
+              [105.85411828100007, 21.017916911000043],
+              [105.85502112500006, 21.018365801000073]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.841340852, 21.001848179],
+            [105.846267369, 21.001833068],
+            [105.848127598, 21.003368322],
+            [105.849999171, 21.003356457],
+            [105.850927469, 21.003182332],
+            [105.850927687, 21.003182291]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 11,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587440.830916,
+        "ydiemdau": 2322582.28372,
+        "xdiemcuoi": 588436.462278,
+        "ydiemcuoi": 2322735.21996,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0101548005938,
+        "phanloai": "Cống bể kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 870,
+        "chieudai": 1062.4,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84134085200009, 21.001848179000035],
+              [105.84626736900009, 21.001833068000053],
+              [105.84812759800008, 21.00336832200003],
+              [105.84999917100004, 21.003356457000052],
+              [105.85092746900006, 21.00318233200005],
+              [105.85092768700008, 21.00318229100003]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.852891981, 21.018098283],
+            [105.852919933, 21.01818247]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 12,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 588631.809618,
+        "ydiemdau": 2324387.24064,
+        "xdiemcuoi": 588634.664773,
+        "ydiemcuoi": 2324396.57415,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.000088706061104,
+        "phanloai": "Cống bể kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 870,
+        "chieudai": 9.8,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.85289198100008, 21.01809828300003],
+              [105.85291993300007, 21.018182470000056]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.853566598, 21.013756549],
+            [105.853137747, 21.01528066],
+            [105.852955333, 21.016809745],
+            [105.852891981, 21.018098283]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 13,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 588704.486746,
+        "ydiemdau": 2323907.06275,
+        "xdiemcuoi": 588631.809618,
+        "ydiemcuoi": 2324387.24064,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.00441331805293,
+        "phanloai": "Cống bể kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 870,
+        "chieudai": 487.6,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.85356659800004, 21.01375654900005],
+              [105.85313774700006, 21.01528066000003],
+              [105.85295533300007, 21.016809745000046],
+              [105.85289198100008, 21.01809828300003]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.850672192, 21.001315271],
+            [105.85092646, 21.003171215],
+            [105.850927469, 21.003182332],
+            [105.851417889, 21.008586071],
+            [105.851751501, 21.013132124],
+            [105.851584884, 21.015129078],
+            [105.851402013, 21.01680547],
+            [105.851439807, 21.017532374],
+            [105.851611318, 21.018287764]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 14,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 588411.00705,
+        "ydiemdau": 2322528.43331,
+        "xdiemcuoi": 588498.605063,
+        "ydiemcuoi": 2324407.50271,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.0170614001253,
+        "phanloai": "Cống bể kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 870,
+        "chieudai": 1887.3,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.85067219200005, 21.001315271000067],
+              [105.85092646000004, 21.003171215000066],
+              [105.85092746900006, 21.00318233200005],
+              [105.85141788900006, 21.008586071000025],
+              [105.85175150100008, 21.013132124000037],
+              [105.85158488400003, 21.01512907800003],
+              [105.85140201300004, 21.016805470000065],
+              [105.85143980700008, 21.01753237400004],
+              [105.85161131800004, 21.018287764000036]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.841449319, 21.021148893],
+            [105.841414483, 21.018845044],
+            [105.841412298, 21.017933154]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 15,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587440.854784,
+        "ydiemdau": 2324718.58116,
+        "xdiemcuoi": 587438.88242,
+        "ydiemcuoi": 2324362.63673,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.00321600497648,
+        "phanloai": "Cống bể kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 870,
+        "chieudai": 356,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84144931900005, 21.02114889300003],
+              [105.84141448300005, 21.018845044000045],
+              [105.84141229800008, 21.017933154000048]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [105.841405121, 21.014936326],
+            [105.841387644, 21.007634052],
+            [105.841254792, 21.000631444]
+          ]
+        ]
+      },
+      "properties": {
+        "gid": 16,
+        "tengoi": null,
+        "ma": null,
+        "quanhuyen": null,
+        "phuongxa": null,
+        "xdiemdau": 587439.883605,
+        "ydiemdau": 2324030.93825,
+        "xdiemcuoi": 587432.59489,
+        "ydiemcuoi": 2322447.56636,
+        "chudautu": null,
+        "dvccaptl": null,
+        "dvquanlytl": null,
+        "ngaynl": null,
+        "nguoinl": null,
+        "capct": null,
+        "shape_leng": 0.014306163021,
+        "phanloai": "Cống bể kỹ thuật",
+        "chucnang": null,
+        "kttdngang": null,
+        "tentuyen": null,
+        "dosau": 870,
+        "chieudai": 1583.4,
+        "geom": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [105.84140512100004, 21.014936326000054],
+              [105.84138764400006, 21.00763405200007],
+              [105.84125479200009, 21.000631444000078]
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

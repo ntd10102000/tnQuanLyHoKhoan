@@ -33,4 +33,5 @@ module.exports = function (app) {
   app.get("/searchQ", controller.searchHoKhoanQ);
   app.get("/dlgj/:tenDuLieu", controller.taiDuLieuGJ);
   app.get("/dlshp/:tenDuLieu", controller.taiDuLieuSHP);
+  app.get("/api/cauHinhTaiSan", controller.cauHinhTaiSan);
 };

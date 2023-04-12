@@ -1,0 +1,86 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiLineString",
+                "coordinates": [
+                    [
+                        [
+                            105.849520618,
+                            21.008588878
+                        ],
+                        [
+                            105.850670418,
+                            21.008702729
+                        ],
+                        [
+                            105.851359804,
+                            21.008725277
+                        ],
+                        [
+                            105.851758644,
+                            21.008704912
+                        ],
+                        [
+                            105.852323411,
+                            21.008675593
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "gid": 1,
+                "shape_leng": 0.00281006464857,
+                "tengoi": null,
+                "ma": "K16HC2",
+                "quanhuyen": "Q. Hai Bà Trưng",
+                "phuongxa": "Phường Cầu Dền",
+                "xdiemdau": 588287.037575,
+                "ydiemdau": 2323332.8535,
+                "xdiemcuoi": 588578.284698,
+                "ydiemcuoi": 2323344.00238,
+                "chudautu": "Sở Giao thông vận tải Hà Nội",
+                "dvccaptl": null,
+                "dvquanlytl": null,
+                "ngaynl": null,
+                "nguoinl": null,
+                "capct": null,
+                "chucnang": null,
+                "solanduong": 0,
+                "sotrucau": 0,
+                "chieudai": 292.159160859,
+                "chieurong": 0,
+                "cctrucau": 0,
+                "geom": {
+                    "type": "MultiLineString",
+                    "coordinates": [
+                        [
+                            [
+                                105.84952061800004,
+                                21.00858887800007
+                            ],
+                            [
+                                105.85067041800005,
+                                21.00870272900005
+                            ],
+                            [
+                                105.85135980400008,
+                                21.008725277000053
+                            ],
+                            [
+                                105.85175864400009,
+                                21.00870491200004
+                            ],
+                            [
+                                105.85232341100004,
+                                21.008675593000078
+                            ]
+                        ]
+                    ]
+                }
+            }
+        }
+    ]
+}
