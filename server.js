@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // set port, listen for requests
-const PORT = process.env.PORT || 4320;
+const PORT = process.env.PORT || 33123;
 
 app.set("views", path.join(__dirname, "app/views"));
 app.set("view engine", "ejs");
@@ -46,32 +46,8 @@ app.use(
   })
 );
 
-console.log("Authenticating Earth Engine API using private key...");
-ee.data.authenticateViaPrivateKey(
-  privateKey,
-  () => {
-    console.log("Authentication successful.");
-    ee.initialize(
-      null,
-      null,
-      () => {
-        console.log("Earth Engine client library initialized.");
-        app.listen(PORT);
-        console.log(`Listening on port ${PORT}`);
-      },
-      (err) => {
-        console.log(err);
-        console.log(
-          `Please make sure you have created a service account and have been approved.
-Visit https://developers.google.com/earth-engine/service_account#how-do-i-create-a-service-account to learn more.`
-        );
-      }
-    );
-  },
-  (err) => {
-    console.log(err);
-  }
-);
+app.listen(PORT);
+console.log(`Listening on port ${PORT}`);
 
 // routes
 require("./app/routes/auth.routes")(app);

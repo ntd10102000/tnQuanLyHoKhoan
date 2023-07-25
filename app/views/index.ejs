@@ -59,153 +59,11 @@
 		border-radius: 4px;
 		padding: 8px;
 		background: #2e2f30;
-		/* pointer-events: none; */
+		pointer-events: none;
 	}
 
 	.custom-infobox.open {
 		display: block;
-	}
-
-	.gallery,
-	h1,
-	p,
-	hr {
-		width: 400px;
-		display: block;
-		margin: 15px auto 15px auto;
-		justify-content: center;
-	}
-
-	.hidden {
-		display: none;
-	}
-
-	.nosel {
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-
-
-	.img-enlarged__cont {
-		width: 100%;
-		height: 0px;
-		opacity: 0;
-		font-family: Helvetica, sans-serif;
-		cursor: zoom-out;
-		background: rgba(0, 0, 0, 0.5);
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 998;
-
-		transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
-	}
-
-	.img-enlarged__cont.open {
-		height: 100%;
-		opacity: 1;
-
-		transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
-	}
-
-	.img-enlarged {
-		max-width: 100%;
-		max-height: 100%;
-		border: 5px solid #eee;
-		display: block;
-		margin: auto !important;
-
-		position: relative;
-		top: 0;
-		bottom: 0;
-	}
-
-	.img-enlarged__nav.next::after {
-		content: ">";
-		font-size: 50px;
-		font-family: monospace;
-		color: #fff;
-		position: absolute;
-		right: 40%;
-		top: 49%;
-	}
-
-	.img-enlarged__nav.prev::after {
-		content: "<";
-		font-size: 50px;
-		font-family: monospace;
-		color: #fff;
-		position: absolute;
-		left: 40%;
-		top: 49%;
-	}
-
-
-	.gallery img {
-		cursor: zoom-in;
-	}
-
-
-	.img-enlarged__nav {
-		background: rgba(0, 0, 0, 0.2);
-		cursor: pointer;
-		z-index: 999;
-		text-align: center;
-		height: 100%;
-		width: 10%;
-		vertical-align: middle;
-		transition: 0.3s width, 0.2s background;
-	}
-
-	.img-enlarged__nav:hover {
-		background: rgba(0, 0, 0, 0.8);
-		width: 11%;
-		transition: 0.3s width, 0.2s background;
-	}
-
-	.img-enlarged__nav:active {
-		width: 12%;
-		transition: 0.1s width;
-	}
-
-	.img-enlarged__nav span {
-		font-size: 25px;
-		color: #fff;
-		height: 20px;
-		display: inline-block;
-	}
-
-	.img-enlarged__nav.prev {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.img-enlarged__nav.next {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-
-
-	.img-enlarged__counter {
-		background: rgba(0, 0, 0, 0.5);
-		color: #fff;
-		font-family: monospace;
-		width: 50px;
-		text-align: center;
-		font-size: 15px;
-		padding: 7px 0 7px 0;
-		margin: auto !important;
-		display: block;
-
-		position: absolute;
-		left: 49%;
-		bottom: 5%;
 	}
 </style>
 
@@ -242,6 +100,33 @@
 								<span class="form-check-label" style="color: #fff;font-size: 14px;">Quận huyện Hà
 									Nội</span>
 							</div>
+							<div class="d-flex flex-row m-2 align-items-center">
+								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
+									onclick="btPhuongXa(this)">
+								<div style="
+										  height: 20px;
+										  width: 20px;
+										  border: 1px solid #7fffd4;
+										  background-color: #7fffd420;
+										margin-left: 8px;
+										margin-right: 8px;
+										"></div>
+								<span class="form-check-label" style="color: #fff;font-size: 14px;">Phường xã</span>
+							</div>
+							<!-- <div class="d-flex flex-row m-2 align-items-center">
+								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
+									onclick="btVungNghienCuu(this)">
+								<div style="
+										  height: 20px;
+										  width: 20px;
+										  border: 1px solid #deb887;
+										  background-color: #deb88720;
+										margin-left: 8px;
+										margin-right: 8px;
+										"></div>
+								<span class="form-check-label" style="color: #fff;font-size: 14px;">Vùng nghiên
+									cứu</span>
+							</div> -->
 						</div>
 						<div>
 							<h3 class="text-gray-800 fw-bold" style="font-size: 16px;
@@ -249,12 +134,24 @@
 							color: #fff;margin-bottom: 4px;">Công trình mặt</h3>
 							<div class="d-flex flex-row m-2 align-items-center">
 								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
+									onclick="btCau(this)">
+								<div style="
+									height: 2px;
+									width: 20px;
+									background-color: #f8e71c;
+									margin-left: 8px;
+									transform: rotate(120deg);
+								 "></div>
+								<span class="form-check-label" style="color: #fff;font-size: 14px;">Cầu</span>
+							</div>
+							<div class="d-flex flex-row m-2 align-items-center">
+								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
 									onclick="btCongTrinhCoTangHam(this)">
 								<div style="
 										  height: 20px;
 										  width: 20px;
-										  border: 1px solid #6e7e8e;
-										  background-color: #6e7e8e;
+										  border: 1px solid #3699ff;
+										  background-color: #3699ff;
 										margin-left: 8px;
 										margin-right: 8px;
 										"></div>
@@ -279,31 +176,29 @@
 									color: #fff;margin-bottom: 4px;">Công trình hạ tầng kỹ thuật ngầm</h3>
 									<div class="d-flex flex-row m-2 align-items-center">
 										<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
-											onclick="btDuongOngCapNuoc(this)">
+											onclick="btFanceHaNoi(this)">
 										<div style="
 											height: 2px;
 											width: 20px;
-											background-color: #0095e8;
+											background-color: #8b865f;
 											margin-left: 8px;
 											transform: rotate(120deg);
 										 "></div>
 										<span class="form-check-label" style="color: #fff;font-size: 14px;">Đường ống
-											cấp
 											nước</span>
 									</div>
 									<div class="d-flex flex-row m-2 align-items-center">
 										<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
-											onclick="btDuongOngThoatNuoc(this)">
+											onclick="btCongBeKyThuat(this)">
 										<div style="
 											height: 2px;
 											width: 20px;
-											background-color: #f1416c;
+											background-color: #ff8c00;
 											margin-left: 8px;
 											transform: rotate(120deg);
 										 "></div>
-										<span class="form-check-label" style="color: #fff;font-size: 14px;">Đường ống
-											thoát
-											nước</span>
+										<span class="form-check-label" style="color: #fff;font-size: 14px;">Tuynel cống
+											bể kỹ thuật</span>
 									</div>
 								</div>
 							</div>
@@ -357,12 +252,27 @@
 							color: #fff;margin-bottom: 4px;">Cấu trúc nền</h3>
 							<div class="d-flex flex-row m-2 align-items-center">
 								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
+									onclick="btCauTrucNen(this)">
+								<div style="
+										  height: 20px;
+										  width: 20px;
+										  border: 1px solid #2f4f4f;
+										  background-color: #2f4f4f;
+										margin-left: 8px;
+										margin-right: 8px;
+										border-radius: 4px;
+										"></div>
+								<span class="form-check-label" style="color: #fff;font-size: 14px;">Bản đồ cấu trúc
+									nền</span>
+							</div>
+							<div class="d-flex flex-row m-2 align-items-center">
+								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
 									onclick="btHoKhoan(this)" checked>
 								<div style="
 										  height: 20px;
 										  width: 20px;
-										  border: 1px solid green;
-										  background-color: green;
+										  border: 1px solid #FFA800;
+										  background-color: #FFA800;
 										margin-left: 8px;
 										margin-right: 8px;
 										border-radius: 4px;
@@ -383,6 +293,48 @@
 										"></div>
 								<span class="form-check-label" style="color: #fff;font-size: 14px;">Mặt cắt</span>
 							</div>
+							<div class="d-flex flex-row m-2 align-items-center">
+								<input class="form-check-input" style="margin: 0 !important;" type="checkbox"
+									onclick="bt3DMC3(this)">
+								<div>
+									<div style="
+										height: 4px;
+										width: 20px;
+										background-color: #a97400;
+										margin-left: 8px;
+										margin-right: 8px;
+										"></div>
+									<div style="
+										height: 4px;
+										width: 20px;
+										background-color: #a0fce9;
+										margin-left: 8px;
+										margin-right: 8px;
+										"></div>
+									<div style="
+										height: 4px;
+										width: 20px;
+										background-color: #8d9cfc;
+										margin-left: 8px;
+										margin-right: 8px;
+										"></div>
+									<div style="
+										height: 4px;
+										width: 20px;
+										background-color: #ffee60;
+										margin-left: 8px;
+										margin-right: 8px;
+										"></div>
+									<div style="
+										height: 4px;
+										width: 20px;
+										background-color: #306200;
+										margin-left: 8px;
+										margin-right: 8px;
+										"></div>
+								</div>
+								<span class="form-check-label" style="color: #fff;font-size: 14px;">Mặt cắt 3D</span>
+							</div>
 						</div>
 						<table style="margin-top: 4px;">
 							<tbody>
@@ -402,19 +354,19 @@
 			</div>
 		</div>
 	</div>
-	<a href="./2D" class="d-flex justify-content-center"
+	<a href="http://14.248.94.155:23112/2d" class="d-flex justify-content-center"
 		style="padding: 3px;background-color: burlywood;border-radius: 4px;position: absolute;right: 84px;top: 7px;text-decoration: none;color: aliceblue;font-weight: 600;width: 32px;border: 1px solid #303336;">2D</a>
 	<div id="chuGiaiLopHoKhoan" class="d-flex flex-column justify-content-center align-items-center">
 		<div class="accordion" id="accordionExample" style="--bs-accordion-bg: rgba(42, 42, 42, 0.1)">
 			<div class="accordion-item">
 				<h2 class="accordion-header" id="headingThree">
-					<button class="accordion-button" type="button" data-bs-toggle="collapse"
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
 						data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
 						style="color: #fff;background-color:  rgba(42, 42, 42, 0.1);">
-						Lớp cắt hố khoan
+						Cột địa tầng
 					</button>
 				</h2>
-				<div id="collapseThree" class="accordion-collapse collapse  show" aria-labelledby="headingThree"
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
 					data-bs-parent="#accordionExample">
 					<div class="accordion-body">
 						<div class="d-flex flex-row align-items-center">
@@ -586,19 +538,20 @@
 
 	<script>
 		function OpenStreetMapNominatimGeocoder() { }
-		var duongOngNuocString = `<%= results.duongOngNuoc ? JSON.stringify(results.duongOngNuoc) : "{}" %>`
-		var duongOngNuoc = JSON.parse(duongOngNuocString.replace(/&#34;/g, '"'));
+		var cauTrucNenString = `<%= results.cauTrucNen ? JSON.stringify(results.cauTrucNen) : "{}" %>`
+		var cauTrucNen = JSON.parse(cauTrucNenString.replace(/&#34;/g, '"'));
 		var loKhoanString = `<%= results.loKhoan ? JSON.stringify(results.loKhoan) : "{}" %>`
 		var loKhoan = JSON.parse(loKhoanString.replace(/&#34;/g, '"'));
 		var quanHuyenString = `<%= results.quanHuyen ? JSON.stringify(results.quanHuyen) : "{}" %>`
 		var quanHuyen = JSON.parse(quanHuyenString.replace(/&#34;/g, '"'));
-		var duongOngCapNuocString = `<%= results.duongOngCapNuoc ? JSON.stringify(results.duongOngCapNuoc) : "{}" %>`
-		var duongOngCapNuoc = JSON.parse(duongOngCapNuocString.replace(/&#34;/g, '"'));
-		var tangHamString = `<%= results.tangHam ? JSON.stringify(results.tangHam) : "{}" %>`
-		var tangHam = JSON.parse(tangHamString.replace(/&#34;/g, '"'));
-		var cocKhoanNhoiString = `<%= results.cocKhoanNhoi ? JSON.stringify(results.cocKhoanNhoi) : "{}" %>`
-
+		var phuongXaString = `<%= results.phuongXa ? JSON.stringify(results.phuongXa) : "{}" %>`
+		var phuongXa = JSON.parse(phuongXaString.replace(/&#34;/g, '"'));
+		var vungNghienCuuString = `<%= results.vungNghienCuu ? JSON.stringify(results.vungNghienCuu) : "{}" %>`
+		var vungNghienCuu = JSON.parse(vungNghienCuuString.replace(/&#34;/g, '"'));
+		var cocKhoanNhoiString = `<%= results.cocKhoanNhoi ? JSON.stringify(results.cocKhoanNhoi) : "{}" %>`;
 		var cocKhoanNhoi = JSON.parse(cocKhoanNhoiString.replace(/&#34;/g, '"'));
+		var cocKhoanNhoiToaCuTheString = `<%= results.cocKhoanNhoiToaCuThe ? JSON.stringify(results.cocKhoanNhoiToaCuThe) : "{}" %>`
+		var cocKhoanNhoiToaCuThe = JSON.parse(cocKhoanNhoiToaCuTheString.replace(/&#34;/g, '"'));
 		// console.log(duongOngCapNuoc);
 		Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2NjFhMzBjOS02YThlLTQ4YjQtYTJlZC1mZjk0ZjJlYjkwNjUiLCJpZCI6NDY0NTEsImlhdCI6MTYxNjE1MjE1OX0.yKaMQt5T-0bNJ2yj-m16X8oYNOIxQTDj6qTu7prxr9U';
 		// var extent = Cesium.Rectangle.fromDegrees(105.862212, 20.996529, 105.862212, 20.996529);
@@ -607,7 +560,7 @@
 
 
 		OpenStreetMapNominatimGeocoder.prototype.geocode = function (input) {
-			const endpoint = "http://localhost:4320/searchQ";
+			const endpoint = "http://103.163.119.33:33123/searchQ";
 			const resource = new Cesium.Resource({
 				url: endpoint,
 				queryParameters: {
@@ -641,7 +594,7 @@
 			function (e) {
 				e.cancel = true;
 				viewer.scene.camera.flyTo({
-					destination: Cesium.Cartesian3.fromDegrees(105.862212, 20.996529, 400),
+					destination: Cesium.Cartesian3.fromDegrees(105.853132, 20.995836, 400),
 					orientation: {
 						heading: Cesium.Math.toRadians(0.0),
 						pitch: Cesium.Math.toRadians(-15.0),
@@ -678,7 +631,9 @@
 		const parentLayerDuongOngCapNuoc = entities.add(new Cesium.Entity());
 		const parentLayerCongTrinhCoTangHam = entities.add(new Cesium.Entity());
 		const parentLayerCocKhoanNhoi = entities.add(new Cesium.Entity());
+		const parentLayerCongBeKyThuat = entities.add(new Cesium.Entity());
 
+		const parentLayerCocKhoanNhoiToaCuThe = entities.add(new Cesium.Entity());
 
 
 
@@ -726,9 +681,9 @@
 					fromDegreesArrayLayerDuongOngThoatNuoc.push(el[1]);
 					// console.log(typeof element.properties.chieusauch, -element.properties.chieusauch / 100);
 					if (typeof element.properties.ChieuSauCh == "number") {
-						fromDegreesArrayLayerDuongOngThoatNuoc.push(-15 + parseFloat((-element.properties.ChieuSauCh / 100).toFixed(1)));
+						fromDegreesArrayLayerDuongOngThoatNuoc.push(-10 + parseFloat((-element.properties.ChieuSauCh / 100).toFixed(1)));
 					} else {
-						fromDegreesArrayLayerDuongOngThoatNuoc.push(-15 + parseFloat((-parseFloat(element.properties.ChieuSauCh) / 100).toFixed(1)));
+						fromDegreesArrayLayerDuongOngThoatNuoc.push(-10 + parseFloat((-parseFloat(element.properties.ChieuSauCh) / 100).toFixed(1)));
 					}
 				});
 			});
@@ -742,9 +697,9 @@
 					fromDegreesArrayLayerDuongOngThoatNuoc.push(el[1]);
 					// console.log(typeof element.properties.chieusauch, -element.properties.chieusauch / 100);
 					if (typeof element.properties.ChieuSauDa == "number") {
-						fromDegreesArrayLayerDuongOngThoatNuoc.push(-15 + parseFloat((-element.properties.ChieuSauDa / 100).toFixed(1)));
+						fromDegreesArrayLayerDuongOngThoatNuoc.push(-10 + parseFloat((-element.properties.ChieuSauDa / 100).toFixed(1)));
 					} else {
-						fromDegreesArrayLayerDuongOngThoatNuoc.push(-15 + parseFloat((-parseFloat(element.properties.ChieuSauDa) / 100).toFixed(1)));
+						fromDegreesArrayLayerDuongOngThoatNuoc.push(-10 + parseFloat((-parseFloat(element.properties.ChieuSauDa) / 100).toFixed(1)));
 					}
 				});
 			});
@@ -753,10 +708,15 @@
 
 		var loKhoanSource = new Cesium.GeoJsonDataSource();
 		var cocKhoanNhoiSource = new Cesium.GeoJsonDataSource();
+		var cocKhoanNhoiToaCuTheSource = new Cesium.GeoJsonDataSource();
 		var quanHuyenSource = new Cesium.GeoJsonDataSource();
+		var phuongXaSource = new Cesium.GeoJsonDataSource();
+		var vungNghienCuuSource = new Cesium.GeoJsonDataSource();
+		var cauTrucNenSource = new Cesium.GeoJsonDataSource();
 		var matCatSource = new Cesium.GeoJsonDataSource();
 		var tangHamSource = new Cesium.GeoJsonDataSource();
 		var nhaCaoTangSource = new Cesium.GeoJsonDataSource();
+		var cauSource = new Cesium.GeoJsonDataSource();
 
 		// if (!viewer.dataSources.contains(tangHamSource)) {
 		// 	viewer.dataSources.add(tangHamSource);
@@ -864,11 +824,12 @@
 			// polyline.show = viewModel.showVectorData;
 		}
 		update();
+
 		const btQuanHuyenHN = async (e) => {
 			if (e.checked) {
 				quanHuyenSource.load(quanHuyen, {
 					stroke: Cesium.Color.YELLOW,
-					fill: Cesium.Color.YELLOW.withAlpha(0.1),
+					fill: Cesium.Color.YELLOW.withAlpha(0.0),
 					strokeWidth: 3,
 				}).then((dataSource) => {
 					const entities = dataSource.entities.values;
@@ -888,19 +849,96 @@
 				viewer.dataSources.remove(quanHuyenSource)
 			}
 		}
+
+		const btPhuongXa = async (e) => {
+			if (e.checked) {
+				phuongXaSource.load(phuongXa, {
+					stroke: Cesium.Color.AQUAMARINE,
+					fill: Cesium.Color.AQUAMARINE.withAlpha(0.0),
+					strokeWidth: 3,
+				}).then((dataSource) => {
+					const entities = dataSource.entities.values;
+					for (let i = 0; i < entities.length; i++) {
+						const entity = entities[i];
+						entity.moTa = {
+							'Phường Xã': entity.properties._tenphuongx._value
+						}
+						entity.polygon.height =
+							-15;
+					}
+				}).catch(function (error) {
+					window.alert(error);
+				});
+				viewer.dataSources.add(phuongXaSource)
+			} else {
+				viewer.dataSources.remove(phuongXaSource)
+			}
+		}
+
+		// const btVungNghienCuu = async (e) => {
+		// 	if (e.checked) {
+		// 		vungNghienCuuSource.load(vungNghienCuu, {
+		// 			stroke: Cesium.Color.BURLYWOOD,
+		// 			fill: Cesium.Color.BURLYWOOD.withAlpha(0.1),
+		// 			strokeWidth: 3,
+		// 		}).then((dataSource) => {
+		// 			const entities = dataSource.entities.values;
+		// 			for (let i = 0; i < entities.length; i++) {
+		// 				const entity = entities[i];
+		// 				entity.moTa = {
+		// 					'Vùng nghiên cứu': 'Vùng nghiên cứu'
+		// 				}
+		// 				entity.polygon.height =
+		// 					-15;
+		// 			}
+		// 		}).catch(function (error) {
+		// 			window.alert(error);
+		// 		});
+		// 		viewer.dataSources.add(vungNghienCuuSource)
+		// 	} else {
+		// 		viewer.dataSources.remove(vungNghienCuuSource)
+		// 	}
+		// }
+
+		const btCauTrucNen = async (e) => {
+			if (e.checked) {
+				cauTrucNenSource.load(cauTrucNen, {
+					stroke: Cesium.Color.DARKSLATEGRAY,
+					fill: Cesium.Color.DARKSLATEGRAY.withAlpha(0.1),
+					strokeWidth: 3,
+				}).then((dataSource) => {
+					const entities = dataSource.entities.values;
+					for (let i = 0; i < entities.length; i++) {
+						const entity = entities[i];
+						entity.moTa = {
+							'Cấu trúc nền': entity.properties._dang._value
+						}
+						entity.polygon.height =
+							-15;
+					}
+				}).catch(function (error) {
+					window.alert(error);
+				});
+				viewer.dataSources.add(cauTrucNenSource)
+			} else {
+				viewer.dataSources.remove(cauTrucNenSource)
+			}
+		}
+
+
 		const btMatCat = async (e) => {
 			if (e.checked) {
-				matCatSource.load("http://localhost:4320/uploads/geojson/mat_cat.geojson", {
+				matCatSource.load("http://103.163.119.33:33123/uploads/geojson/mat_cat.geojson", {
 					stroke: Cesium.Color.fromCssColorString('#B8E986'),
 					strokeWidth: 3,
 				}).then((dataSource) => {
 					const entities = dataSource.entities.values;
 					for (let i = 0; i < entities.length; i++) {
 						const entity = entities[i];
-						console.log({
-							MaMatCat: entity.properties._MaMatCat._value,
-							TenMatCat: entity.properties._TenMatCat._value,
-						});
+						// console.log({
+						// 	MaMatCat: entity.properties._MaMatCat._value,
+						// 	TenMatCat: entity.properties._TenMatCat._value,
+						// });
 						entity.moTa = {
 							MaMatCat: entity.properties._MaMatCat._value,
 							TenMatCat: entity.properties._TenMatCat._value,
@@ -915,204 +953,177 @@
 				viewer.dataSources.remove(matCatSource)
 			}
 		}
+
+		const btCau = async (e) => {
+			if (e.checked) {
+				cauSource.load("http://103.163.119.33:33123/uploads/geojson/Cau.geojson", {
+					stroke: Cesium.Color.fromCssColorString('#f8e71c'),
+					strokeWidth: 3,
+				}).then((dataSource) => {
+					const entities = dataSource.entities.values;
+					for (let i = 0; i < entities.length; i++) {
+						const entity = entities[i];
+						// console.log({
+						// 	MaMatCat: entity.properties._MaMatCat._value,
+						// 	TenMatCat: entity.properties._TenMatCat._value,
+						// });
+						entity.moTa = {
+							ma: entity.properties._ma._value,
+						}
+						// entity.polygon.height = -15;
+					}
+				}).catch(function (error) {
+					window.alert(error);
+				});
+				viewer.dataSources.add(cauSource)
+			} else {
+				viewer.dataSources.remove(cauSource)
+			}
+		}
+
+		const tinhDoSau = (obj, index) => {
+			var a = obj.slice(0, index + 1);
+			var doSau = obj[index].value;
+			for (let i = 0; i < a.length; i++) {
+				if (a[i].value != 0 && doSau > a[i].value) {
+					doSau = doSau - a[i].value;
+					break;
+				}
+			}
+			return doSau;
+		}
+
+		const tinhSoVoiMatDat = (obj, index) => {
+			var doSauSoVoiMatDat = 0;
+			for (let i = 0; i < index - 1 + 1; i++) {
+				doSauSoVoiMatDat = doSauSoVoiMatDat + tinhDoSau(obj, obj[i].index)
+			}
+			return -15 - (doSauSoVoiMatDat + obj[index].value / 2);
+		}
+
 		const btHoKhoan = async (e) => {
 			if (e.checked) {
 				loKhoanSource.load(loKhoan, {
-					markerColor: Cesium.Color.GREEN,
+					markerColor: Cesium.Color.fromCssColorString('#FFA800'),
 					markerSize: 28
 				})
 				viewer.dataSources.add(loKhoanSource);
 				loKhoan.features.forEach(element => {
 					if (element.geometry) {
+						var objectLop = [
+							{ value: element.properties.bedaydatla, index: 0 },
+							{ value: element.properties.bedaylop1, index: 1 },
+							{ value: element.properties.bedaylop2, index: 2 },
+							{ value: element.properties.bedaylop3, index: 3 },
+							{ value: element.properties.bedaylop4, index: 4 },
+							{ value: element.properties.bedaylop5, index: 5 },
+							{ value: element.properties.bedaylop6, index: 6 },
+							{ value: element.properties.bedaylop7, index: 7 },
+							{ value: element.properties.bedaylop8, index: 8 },
+							{ value: element.properties.bedaylop9, index: 9 },
+							{ value: element.properties.bedaylop10, index: 10 },
+							{ value: element.properties.bedaylop11, index: 11 },
+							{ value: element.properties.bedaylop12, index: 12 },
+							{ value: element.properties.bedaylop13, index: 13 },
+							{ value: element.properties.bedaylop14, index: 14 },
+							{ value: element.properties.bedaylop15, index: 15 },
+							{ value: element.properties.bedaylop16, index: 16 },
+							{ value: element.properties.bedaylop17, index: 17 },
+							{ value: element.properties.bedaylop18, index: 18 },
+							{ value: element.properties.bedaylop19, index: 19 },
+						];
+
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop1' + element.properties.tenhokhoan,
 							name: 'bedaylop1',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - element.properties.bedaylop1 / 2),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 1)),
 							cylinder: {
-								length: element.properties.bedaylop1,
+								length: tinhDoSau(objectLop, 1),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#86d3bb')
 							},
-							label: element.properties.bedaylop1 > 0 ? {
-								text: 'Lớp 1',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop2' + element.properties.tenhokhoan,
 							name: 'bedaylop2',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 2)),
 							cylinder: {
-								length: element.properties.bedaylop2,
+								length: tinhDoSau(objectLop, 2),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#72c4a9')
-							}, label: element.properties.bedaylop2 > 0 ? {
-								text: 'Lớp 2',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+							},
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop3' + element.properties.tenhokhoan,
 							name: 'bedaylop3',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 3)),
 							cylinder: {
-								length: element.properties.bedaylop3,
+								length: tinhDoSau(objectLop, 3),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#58b596')
-							}, label: element.properties.bedaylop3 > 0 ? {
-								text: 'Lớp 3',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+							},
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop4' + element.properties.tenhokhoan,
 							name: 'bedaylop4',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 4)),
 							cylinder: {
-								length: element.properties.bedaylop4,
+								length: tinhDoSau(objectLop, 4),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#44aa89')
-							}, label: element.properties.bedaylop4 > 0 ? {
-								text: 'Lớp 4',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+							},
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop5' + element.properties.tenhokhoan,
 							name: 'bedaylop5',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 5)),
 							cylinder: {
-								length: element.properties.bedaylop5,
+								length: tinhDoSau(objectLop, 5),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#52b092')
-							}, label: element.properties.bedaylop5 > 0 ? {
-								text: 'Lớp 5',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+							},
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop6' + element.properties.tenhokhoan,
 							name: 'bedaylop6',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 6)),
 							cylinder: {
-								length: element.properties.bedaylop6,
+								length: tinhDoSau(objectLop, 6),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#9cb075')
-							}, label: element.properties.bedaylop6 > 0 ? {
-								text: 'Lớp 6',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+							},
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop7' + element.properties.tenhokhoan,
 							name: 'bedaylop7',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 7)),
 							cylinder: {
-								length: element.properties.bedaylop7,
+								length: tinhDoSau(objectLop, 7),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#6d863d')
-							}, label: element.properties.bedaylop7 > 0 ? {
-								text: 'Lớp 7',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+							},
 						});
 
 						entities.add({
@@ -1120,339 +1131,171 @@
 							parent: boxes,
 							id: 'bedaylop8' + element.properties.tenhokhoan,
 							name: 'bedaylop8',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 8)),
 							cylinder: {
-								length: element.properties.bedaylop8,
+								length: tinhDoSau(objectLop, 8),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#627835')
 							},
-							label: element.properties.bedaylop8 > 0 ? {
-								text: 'Lớp 8',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop9' + element.properties.tenhokhoan,
 							name: 'bedaylop9',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 9)),
 							cylinder: {
-								length: element.properties.bedaylop9,
+								length: tinhDoSau(objectLop, 9),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#5b6f30')
 							},
-							label: element.properties.bedaylop9 > 0 ? {
-								text: 'Lớp 9',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop10' + element.properties.tenhokhoan,
 							name: 'bedaylop10',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 10)),
 							cylinder: {
-								length: element.properties.bedaylop10,
+								length: tinhDoSau(objectLop, 10),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#53672b')
 							},
-							label: element.properties.bedaylop10 > 0 ? {
-								text: 'Lớp 10',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop11' + element.properties.tenhokhoan,
 							name: 'bedaylop11',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 11)),
 							cylinder: {
-								length: element.properties.bedaylop11,
+								length: tinhDoSau(objectLop, 11),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#c98b5d'),
 							},
-							label: element.properties.bedaylop11 > 0 ? {
-								text: 'Lớp 11',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop12' + element.properties.tenhokhoan,
 							name: 'bedaylop12',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 12)),
 							cylinder: {
-								length: element.properties.bedaylop12,
+								length: tinhDoSau(objectLop, 12),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#ea8c40'),
 							},
-							label: element.properties.bedaylop12 > 0 ? {
-								text: 'Lớp 12',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop13' + element.properties.tenhokhoan,
 							name: 'bedaylop13',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 + element.properties.bedaylop13 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 13)),
 							cylinder: {
-								length: element.properties.bedaylop13,
+								length: tinhDoSau(objectLop, 13),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#c87330'),
 							},
-							label: element.properties.bedaylop13 > 0 ? {
-								text: 'Lớp 13',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop14' + element.properties.tenhokhoan,
 							name: 'bedaylop14',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 + element.properties.bedaylop13 + element.properties.bedaylop14 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 14)),
 							cylinder: {
-								length: element.properties.bedaylop14,
+								length: tinhDoSau(objectLop, 14),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#a7551a'),
 							},
-							label: element.properties.bedaylop14 > 0 ? {
-								text: 'Lớp 14',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop15' + element.properties.tenhokhoan,
 							name: 'bedaylop15',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 + element.properties.bedaylop13 + element.properties.bedaylop14 + element.properties.bedaylop15 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 15)),
 							cylinder: {
-								length: element.properties.bedaylop15,
+								length: tinhDoSau(objectLop, 15),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#a8612e'),
 							},
-							label: element.properties.bedaylop15 > 0 ? {
-								text: 'Lớp 15',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop16' + element.properties.tenhokhoan,
 							name: 'bedaylop16',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 + element.properties.bedaylop13 + element.properties.bedaylop14 + element.properties.bedaylop15 + element.properties.bedaylop16 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 16)),
 							cylinder: {
-								length: element.properties.bedaylop16,
+								length: tinhDoSau(objectLop, 16),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#959297'),
 							},
-							label: element.properties.bedaylop16 > 0 ? {
-								text: 'Lớp 16',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop17' + element.properties.tenhokhoan,
 							name: 'bedaylop17',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 + element.properties.bedaylop13 + element.properties.bedaylop14 + element.properties.bedaylop15 + element.properties.bedaylop16 + element.properties.bedaylop17 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 17)),
 							cylinder: {
-								length: element.properties.bedaylop17,
+								length: tinhDoSau(objectLop, 17),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#4d7cb5'),
 							},
-							label: element.properties.bedaylop17 > 0 ? {
-								text: 'Lớp 17',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop18' + element.properties.tenhokhoan,
 							name: 'bedaylop18',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 + element.properties.bedaylop13 + element.properties.bedaylop14 + element.properties.bedaylop15 + element.properties.bedaylop16 + element.properties.bedaylop17 + element.properties.bedaylop18 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 18)),
 							cylinder: {
-								length: element.properties.bedaylop18,
+								length: tinhDoSau(objectLop, 18),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#3a618f'),
 							},
-							label: element.properties.bedaylop18 > 0 ? {
-								text: 'Lớp 18',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 						entities.add({
 							moTa: element.properties,
 							parent: boxes,
 							id: 'bedaylop19' + element.properties.tenhokhoan,
 							name: 'bedaylop19',
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.bedaylop1 + element.properties.bedaylop2 + element.properties.bedaylop3 + element.properties.bedaylop4 + element.properties.bedaylop5 + element.properties.bedaylop6 + element.properties.bedaylop7 + element.properties.bedaylop8 + element.properties.bedaylop9 + element.properties.bedaylop10 + element.properties.bedaylop11 + element.properties.bedaylop12 + element.properties.bedaylop13 + element.properties.bedaylop14 + element.properties.bedaylop15 + element.properties.bedaylop16 + element.properties.bedaylop17 + element.properties.bedaylop18 + element.properties.bedaylop19 / 2)),
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], tinhSoVoiMatDat(objectLop, 19)),
 							cylinder: {
-								length: element.properties.bedaylop19,
+								length: tinhDoSau(objectLop, 19),
 								topRadius: 1,
 								bottomRadius: 1,
 								material: Cesium.Color.fromCssColorString('#284569'),
 							},
-							label: element.properties.bedaylop19 > 0 ? {
-								text: 'Lớp 19',
-								font: "8px sans-serif",
-								showBackground: true,
-								eyeOffset: Cesium.Cartesian3(0.0, 0.0, -10.0),
-								horizontalOrigin: Cesium.HorizontalOrigin.RIGHT,
-								pixelOffset: Cesium.Cartesian2(0.0, -20.0),
-								pixelOffsetScaleByDistance: Cesium.NearFarScalar(
-									1.5e2,
-									3.0,
-									1.5e7,
-									0.5
-								),
-								disableDepthTestDistance: 1.2742018 * 10 ** 7,
-							} : {},
+
 						});
 					} else {
-						console.log(element);
+						// console.log(element);
 
 					}
 				});
@@ -1479,19 +1322,30 @@
 				cocKhoanNhoi.features.forEach(element => {
 					if (element.geometry) {
 						entities.add({
-							id: 'cocKhoanNhoi' + element.properties.f1,
+							id: 'cocKhoanNhoi' + element.properties.gid,
 							parent: parentLayerCocKhoanNhoi,
-							name: element.properties.f1,
-							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.f2 / 2)),
+							name: 'cocKhoanNhoiName' + element.properties.gid,
+							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.cdcoc / 2) + element.properties.cdodaucoc),
 							cylinder: {
-								length: element.properties.f2,
-								topRadius: 1,
-								bottomRadius: 1,
+								length: element.properties.cdcoc,
+								topRadius: 0.25,
+								bottomRadius: 0.25,
 								material: Cesium.Color.fromCssColorString('#702af7')
 							},
 							moTa: {
-								'Mã công trình': element.properties.f1,
-								'Số lượng tầng': element.properties.f2,
+								'Mã': element.properties.ma,
+								'Tên gọi': element.properties.tengoi,
+								'Quận Huyện': element.properties.quanHuyen,
+								'Phường Xã': element.properties.phuongXa,
+								'Chủ đầu tư': element.properties.chudautu,
+								'Đơn vị cung cấp tài liệu': element.properties.dvccaptl,
+								'Đơn vị quản lý tài liệu': element.properties.dvquanlytl,
+								'Ngày nhập dữ liệu': element.properties.ngaynl,
+								'Người nhập dữ liệu': element.properties.nguoinl,
+								'Đường kính cọc': element.properties.dkcoc,
+								'Chiều dài cọc': element.properties.cdcoc,
+								'Chiều dài ở đầu cọc': element.properties.cdodaucoc,
+								'Chiều dài ở đáy cọc': element.properties.cdodaycoc,
 							}
 						});
 					}
@@ -1500,7 +1354,7 @@
 				viewer.dataSources.remove(cocKhoanNhoiSource)
 				cocKhoanNhoi.features.forEach(element => {
 					if (element.geometry) {
-						entities.removeById('cocKhoanNhoi' + element.properties.f1);
+						entities.removeById('cocKhoanNhoi' + element.properties.gid);
 					}
 				});
 			}
@@ -1510,7 +1364,7 @@
 
 		const btTangHam = async (e) => {
 			if (e.checked) {
-				tangHamSource.load("http://localhost:4320/uploads/geojson/TangHamCCCongTrinhXayDung.geojson").then(function (dataSource) {
+				tangHamSource.load("http://103.163.119.33:33123/uploads/geojson/TangHamCCCongTrinhXayDung.geojson").then(function (dataSource) {
 					const entities = dataSource.entities.values;
 					const colorHash = {};
 					for (let i = 0; i < entities.length; i++) {
@@ -1521,32 +1375,26 @@
 						entity.polygon.extrudedHeight =
 							- 15;
 						entity.polygon.height =
-							- 15 - entity.properties.ChieuCao + entity.properties.ChieuSauMa;
+							- 15 - (entity.properties.ccham * entity.properties.sotang);
 						entity.id =
 							'tangHamCongTrinhXayDung'
 						entity.moTa = {
-							"MaCongTrin": entity.properties.MaCongTrin,
-							"MaHieuTuye": entity.properties.MaHieuTuye,
-							"TenCongTri": entity.properties.TenCongTri,
-							"HangMuc": entity.properties.HangMuc,
-							"DiaDiem": entity.properties.DiaDiem,
-							"DienTichSa": entity.properties.DienTichSa,
-							"KinhThuocT": entity.properties.KinhThuocT,
-							"LoaiMong": entity.properties.LoaiMong,
-							"DuongKinhC": entity.properties.DuongKinhC,
-							"ChieuSauDa": entity.properties.ChieuSauDa,
-							"CapCongTri": entity.properties.CapCongTri,
-							"SoLuongTan": entity.properties.SoLuongTan,
-							"SoLuongT00": entity.properties.SoLuongT00,
-							"ViTriXayDu": entity.properties.ViTriXayDu,
-							"QuanHuyen": entity.properties.QuanHuyen,
-							"PhuongXa": entity.properties.PhuongXa,
-							"TenChuSoHu": entity.properties.TenChuSoHu,
-							"ThongTinLi": entity.properties.ThongTinLi,
-							"ChieuDai": entity.properties.ChieuDai,
-							"ChieuRong": entity.properties.ChieuRong,
-							"ChieuCao": entity.properties.ChieuCao,
-							"ChieuSauMa": entity.properties.ChieuSauMa,
+							"Tên gọi": entity.properties.tengoi,
+							"Mã": entity.properties.ma,
+							"Quận Huyện": entity.properties.quanhuyen,
+							"Phường Xã": entity.properties.phuongxa,
+							"Địa chỉ": entity.properties.diachi,
+							"Tọa độ x": entity.properties.toadox,
+							"Tọa độ y": entity.properties.toadoy,
+							"Chủ đầu tư": entity.properties.chudautu,
+							"Đơn vị cung cấp": entity.properties.dvccaptl,
+							"Đơn vị quản lý tài liệu": entity.properties.dvquanlytl,
+							"Ngày nhập dữ liệu": entity.properties.ngaynl,
+							"Người nhập dữ liệu": entity.properties.nguoinl,
+							"Chức năng": entity.properties.chucnang,
+							"Số tầng": entity.properties.sotang,
+							"Diện tích sàn": entity.properties.dtsan,
+							"Kích thước mặt bằng": entity.properties.ktmatbang,
 						}
 					}
 				})
@@ -1565,32 +1413,32 @@
 		const btCongTrinhCoTangHam = async (e) => {
 			if (e.checked) {
 				const promiseNhaCaoTang = Cesium.GeoJsonDataSource.load(
-					"http://localhost:4320/uploads/geojson/NhaCaoTang.geojson"
+					"http://103.163.119.33:33123/uploads/geojson/NhaCaoTang.geojson"
 				);
-				tangHamSource.load("http://localhost:4320/uploads/geojson/NhaCaoTang.geojson")
+				tangHamSource.load("http://103.163.119.33:33123/uploads/geojson/NhaCaoTang.geojson")
 					.then(function (dataSource) {
 						const entities = dataSource.entities.values;
 						const colorHash = {};
 						for (let i = 0; i < entities.length; i++) {
 							const entity = entities[i];
 							entity.parent = parentLayerCongTrinhCoTangHam;
-							entity.polygon.material = Cesium.Color.DARKSLATEGRAY;
+							entity.polygon.material = Cesium.Color.fromCssColorString('#3699ff');
 							entity.polygon.outline = false;
 							entity.polygon.extrudedHeight =
 								- 15;
 							entity.polygon.height =
-								- 15 + entity.properties.SoLuongTan * 4;
+								- 15 + entity.properties.sltangnoi * 4;
 							entity.moTa = {
-								"Mã công trình": entity.properties.MaCongTrin,
-								"Tên công trình": entity.properties.TenCongTri,
-								"Quận Huyện": entity.properties.QuanHuyen,
-								"Phường Xã": entity.properties.PhuongXa,
-								"Diện tích": entity.properties.DienTich,
-								"Loại móng": entity.properties.LoaiMong,
-								"Cấp công trình": entity.properties.CapCongTri,
-								"Số lượng tầng": entity.properties.SoLuongTan,
-								"Tên chủ sở hữu": entity.properties.TenChuSoHu,
-								"Thông tin": entity.properties.ThongTinLi,
+								"Mã công trình": entity.properties.ma,
+								"Tên công trình": entity.properties.tengoi,
+								"Quận Huyện": entity.properties.quanhuyen,
+								"Phường Xã": entity.properties.phuongxa,
+								"Diện tích": entity.properties.dtsan,
+								"Loại móng": entity.properties.loaimong,
+								"Cấp công trình": entity.properties.capct,
+								"Số lượng tầng": entity.properties.sltangnoi,
+								"Tên chủ sở hữu": entity.properties.chudautu,
+								"Số lượng tầng hầm": entity.properties.sltangham,
 							}
 						}
 					})
@@ -1604,159 +1452,8 @@
 			}
 		}
 
-		const btDuongOngCapNuoc = async (e) => {
-			if (e.checked) {
-				fetch("./uploads/geojson/DuongOngCapNuoc.geojson")
-					.then((res) => res.json())
-					.then((data) => {
-						data.features.forEach(element => {
-							if (element.geometry) {
-								// if (element.properties.duongkinho.indexOf('x') == -1) {
-								// console.log(element.properties.DuongKinhO, parseFloat(element.properties.DuongKinhO), parseFloat(element.properties.DuongKinhO) ? false : true);
-								// console.log(lapDuongOng(element));
-								if (element.properties.OBJECTID < 100) {
-									entities.add({
-										id: 'duongOngCapNuoc' + element.properties.OBJECTID,
-										parent: parentLayerDuongOngCapNuoc,
-										name: element.properties.OBJECTID,
-										polylineVolume: {
-											positions: Cesium.Cartesian3.fromDegreesArrayHeights(lapDuongOngCapNuoc(element)),
-											shape: computeCircle(parseFloat(element.properties.DuongKinhO) ? (parseFloat(element.properties.DuongKinhO) / 1000) : (600 / 1000)),
-											material: Cesium.Color.BLUE,
-										},
-										moTa: {
-											"Mã đường ống": element.properties.MaDuongOng,
-											"Mã hiệu tuyến": element.properties.MaHieuTuye,
-											"Hạng mục": element.properties.HangMuc,
-											"Địa điểm": element.properties.DiaDiem,
-											"Loại ống": element.properties.LoaiOng,
-											"Đường kính": element.properties.DuongKinhO,
-											"Chất liệu": element.properties.ChatLieuOn,
-											"Chiều sâu": element.properties.ChieuSauCh,
-											"Chiều dài": element.properties.ChieuDaiTu,
-											"Vị trí xây dựng": element.properties.ViTriXayDu,
-											"Quận Huyện": element.properties.QuanHuyen,
-											"Phường Xã": element.properties.PhuongXa,
-											"Tên chủ sở hữu": element.properties.TenChuSoHu,
-											"Thông tin": element.properties.ThongTinLi,
-										}
-									});
-								}
-
-								// } else {
-								// 	entities.add({
-								// 		parent: parentLayerDuongOngCapNuoc,
-								// 		name: element.properties.maduongong,
-								// 		polylineVolume: {
-								// 			positions: Cesium.Cartesian3.fromDegreesArrayHeights(lapDuongOng(element)),
-								// 			shape: [
-								// 				new Cesium.Cartesian2(-tachKichCoDuongOng1(element.properties.duongkinho) / 1000, -tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 				new Cesium.Cartesian2(tachKichCoDuongOng1(element.properties.duongkinho) / 1000, -tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 				new Cesium.Cartesian2(tachKichCoDuongOng1(element.properties.duongkinho) / 1000, tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 				new Cesium.Cartesian2(-tachKichCoDuongOng1(element.properties.duongkinho) / 1000, tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 			],
-								// 			cornerType: Cesium.CornerType.BEVELED,
-								// 			material: Cesium.Color.BLUE,
-								// 		},
-								// 	});
-								// }
-							}
-						});
-					});
-			} else {
-				fetch("./uploads/geojson/DuongOngCapNuoc.geojson")
-					.then((res) => res.json())
-					.then((data) => {
-						data.features.forEach(element => {
-							if (element.geometry) {
-								if (element.properties.OBJECTID < 100) {
-									entities.removeById('duongOngCapNuoc' + element.properties.OBJECTID)
-								}
-							}
-						});
-					});
-			}
-		}
-
-		const btDuongOngThoatNuoc = async (e) => {
-			if (e.checked) {
-				fetch("./uploads/geojson/DuongOngThoatNuoc.geojson")
-					.then((res) => res.json())
-					.then((data) => {
-						data.features.forEach(element => {
-							if (element.geometry) {
-								// if (element.properties.duongkinho.indexOf('x') == -1) {
-								// console.log(element.properties.DuongKinhO, parseFloat(element.properties.DuongKinhO), parseFloat(element.properties.DuongKinhO) ? false : true);
-								// console.log(lapDuongOng(element));
-								if (element.properties.OBJECTID < 100) {
-									entities.add({
-										id: 'duongOngThoatNuoc' + element.properties.OBJECTID,
-										parent: parentLayerDuongOngThoatNuoc,
-										name: element.properties.OBJECTID,
-										polylineVolume: {
-											positions: Cesium.Cartesian3.fromDegreesArrayHeights(lapDuongOngThoatNuoc(element)),
-											shape: computeCircle(parseFloat(element.properties.DuongKinh) ? (parseFloat(element.properties.DuongKinh) / 1000) : (600 / 1000)),
-											material: Cesium.Color.RED,
-											moTa: {
-												"Mã tuyến thô": element.properties.MaTuyenTho,
-												"Mã hiệu tuyến": element.properties.MaHieuTuye,
-												"Tên công trình": element.properties.TenCongTri,
-												"Điểm bắt đầu": element.properties.DiemBatDau,
-												"Điểm kết thúc": element.properties.DiemKetThu,
-												"Hạng mục": element.properties.HangMuc,
-												"Địa điểm": element.properties.DiaDiem,
-												"Loại cong": element.properties.LoaiCong,
-												"Kích thước": element.properties.KichThuoc,
-												"Chất liệu": element.properties.ChatLieuCo,
-												"Chiều sâu": element.properties.ChieuSauDa,
-												"Chiều dài": element.properties.ChieuDaiTu,
-												"Vị trí": element.properties.ViTriXayDu,
-												"Quận Huyện": element.properties.QuanHuyen,
-												"Phường Xã": element.properties.PhuongXa,
-												"Tên chủ sở hữu": element.properties.TenChuSoHu,
-												"Thông tin": element.properties.ThongTinLi,
-											}
-										},
-									});
-								}
-								// } else {
-								// 	entities.add({
-								// 		parent: parentLayerDuongOngCapNuoc,
-								// 		name: element.properties.maduongong,
-								// 		polylineVolume: {
-								// 			positions: Cesium.Cartesian3.fromDegreesArrayHeights(lapDuongOng(element)),
-								// 			shape: [
-								// 				new Cesium.Cartesian2(-tachKichCoDuongOng1(element.properties.duongkinho) / 1000, -tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 				new Cesium.Cartesian2(tachKichCoDuongOng1(element.properties.duongkinho) / 1000, -tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 				new Cesium.Cartesian2(tachKichCoDuongOng1(element.properties.duongkinho) / 1000, tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 				new Cesium.Cartesian2(-tachKichCoDuongOng1(element.properties.duongkinho) / 1000, tachKichCoDuongOng2(element.properties.duongkinho) / 1000),
-								// 			],
-								// 			cornerType: Cesium.CornerType.BEVELED,
-								// 			material: Cesium.Color.BLUE,
-								// 		},
-								// 	});
-								// }
-							}
-						});
-					});
-			} else {
-				fetch("./uploads/geojson/DuongOngThoatNuoc.geojson")
-					.then((res) => res.json())
-					.then((data) => {
-						data.features.forEach(element => {
-							if (element.geometry) {
-								if (element.properties.OBJECTID < 100) {
-									entities.removeById('duongOngThoatNuoc' + element.properties.OBJECTID)
-								}
-							}
-						});
-					});
-			}
-		}
-
-
 		viewer.camera.flyTo({
-			destination: Cesium.Cartesian3.fromDegrees(105.862212, 20.996529, 400),
+			destination: Cesium.Cartesian3.fromDegrees(105.853132, 20.995836, 400),
 			orientation: {
 				heading: Cesium.Math.toRadians(0.0),
 				pitch: Cesium.Math.toRadians(-15.0),
@@ -1774,11 +1471,9 @@
 					infoBox.classList.add("open");
 					if (ent.moTa.tenhokhoan) {
 						infoBox.innerHTML = `
-						<div class="gallery">
-			<img src="http://localhost:4320/img/${ent.moTa.tenhokhoan}.jpg"
-				width="200" />
-		</div>
-				
+				<div class="text-center">
+					<img src="http://103.163.119.33:33123/img/${ent.moTa.tenhokhoan}.jpg" style="max-width: 200px;">
+				</div>
 				<table class="table table-dark table-striped" style="margin: 0;margin-top: 8px;width: 400px;">
 					<tbody>
 						<tr>
@@ -1791,17 +1486,12 @@
 						</tr>
 					</tbody>
 				</table>`;
-						setTimeout(() => {
-							reloadScript();
-							console.log('đã xong');
-						}, 5000);
 					}
 					if (ent.moTa.TenMatCat) {
 						infoBox.innerHTML = `
-						<div class="gallery">
-			<img src="http://localhost:4320/img/${ent.moTa.MaMatCat}.jpg"
-				width="200" />
-		</div>
+				<div class="text-center">
+					<img src="http://103.163.119.33:33123/img/${ent.moTa.MaMatCat}.jpg" style="max-width: 400px;">
+				</div>
 				<table class="table table-dark table-striped" style="margin: 0;margin-top: 8px;width: 400px;">
 					<tbody>
 						<tr>
@@ -1814,10 +1504,6 @@
 						</tr>
 					</tbody>
 				</table>`;
-						setTimeout(() => {
-							reloadScript();
-							console.log('đã xong');
-						}, 5000);
 					}
 
 				} else {
@@ -1845,228 +1531,155 @@
 		});
 		btHoKhoan({ checked: true });
 		btMatCat({ checked: true });
-		function reloadScript() {
-			with (document) {
-				var newscr = createElement('script');
-				newscr.id = 'reloadMe';
-				newscr.appendChild(createTextNode(getElementById('reloadMe').innerHTML));
-				body.removeChild(getElementById('reloadMe'));
-				body.appendChild(newscr);
-			}
-		}
-
-	</script>
-	<script type="text/javascript" id="reloadMe">
-		var gallery_info = { imgs: [], currentIndex: 0 }, gallery_counter, gallery_buttons;
-
-
-		function id(id) {
-			return document.getElementById(id);
-		}
-
-
-		function displayImg(src) {
-			// actually displays the image
-			id("enlarged-image").src = src;
-
-
-			// update counter if applicable
-			if (gallery_info.imgs.length > 1) {
-				// set the counter
-				gallery_counter.innerHTML = (parseInt(gallery_info.currentIndex) + 1) + "/" + gallery_info.imgs.length;
-
-				// show buttons
-				for (var i = 0; i < gallery_buttons.length; i++) {
-					gallery_buttons[i].classList.remove("hidden");
-				}
-			}
-			else {
-				// hide buttons if theres only 1 image
-				for (var i = 0; i < gallery_buttons.length; i++) {
-					gallery_buttons[i].classList.add("hidden");
-				}
-			}
-
-		}
-
-
-		function enlargeImg(srcImg) {
-
-			// store metadata
-			if (srcImg.getAttribute("data-gallery-index") != null) {
-				// if it's a gallery with multiple linked images
-				var allImgs = srcImg.parentNode.getElementsByTagName("img");
-
-				gallery_info.currentIndex = srcImg.getAttribute("data-gallery-index");
-				gallery_info.imgs = allImgs;
-			}
-			else {
-				// if it's a single image
-				gallery_info.currentIndex = 0;
-				gallery_info.imgs = [srcImg];
-			}
-
-
-			// Actually enlarge the image
-			var large_src = srcImg.src;
-
-			// if an alternate SRC is supplied, use this instead
-			if (srcImg.getAttribute("data-large-src") != null) {
-				large_src = srcImg.getAttribute("data-large-src");
-			}
-
-			displayImg(large_src);
-			id("enlarged-image").parentNode.classList.add("open");
-		}
-
-
-		function unenlargeImg() {
-			// Close
-			id("enlarged-image").parentNode.classList.remove("open");
-
-			gallery_counter.innerHTML = "1/1";
-		}
-
-
-		function nextImage() {
-			// Loads the next image in line
-			var src = "";
-
-
-			// change index
-			if (gallery_info.currentIndex + 1 >= gallery_info.imgs.length) {
-				// if at the end of the queue
-				gallery_info.currentIndex = 0;
-			}
-			else {
-				// if not at end of queue
-				gallery_info.currentIndex = parseInt(gallery_info.currentIndex) + 1;
-			}
-
-
-			// if alt SRC supplied, use this
-			if (gallery_info.imgs[gallery_info.currentIndex].getAttribute("data-large-src") != null) {
-				src = gallery_info.imgs[gallery_info.currentIndex].getAttribute("data-large-src");
-			}
-			// otherwise, use the src from the img tag
-			else {
-				src = gallery_info.imgs[gallery_info.currentIndex].src;
-			}
-
-
-			// display image
-			displayImg(src);
-		}
-
-
-		function prevImage() {
-			// Loads the next image in line
-			var src = "";
-
-
-			// change index
-			if (gallery_info.currentIndex <= 0) {
-				// if at the end of the queue
-				gallery_info.currentIndex = gallery_info.imgs.length - 1;
-			}
-
-			else {
-				// if not at end of queue
-				gallery_info.currentIndex = parseInt(gallery_info.currentIndex) - 1;
-			}
-
-
-			// if alt SRC supplied, use this
-			if (gallery_info.imgs[gallery_info.currentIndex].getAttribute("data-large-src") != null) {
-				src = gallery_info.imgs[gallery_info.currentIndex].getAttribute("data-large-src");
-			}
-			// otherwise, use the src from the img tag
-			else {
-				src = gallery_info.imgs[gallery_info.currentIndex].src;
-			}
-
-
-			// display image
-			displayImg(src);
-		}
-
-
-		function initialise() {
-			// Set up event listeners
-			// In a separate function in case u need to call it after page load
-			var galleries = document.getElementsByClassName("gallery");
-
-
-			for (var x = 0; x < galleries.length; x++) {
-				// for each gallery
-				var gallery = galleries[x].children;
-
-				for (var i = 0; i < gallery.length; i++) {
-					// for each image, add a click listener
-					if (gallery[i].src != "") {
-						let src = gallery[i].src;
-
-						gallery[i].onclick = function () {
-							enlargeImg(this);
-						}
+		const lapCongBeKyThuat = (element) => {
+			var fromDegreesArrayLayerCongBeKyThuat = [];
+			element.geometry.coordinates.forEach(e => {
+				e.forEach(el => {
+					fromDegreesArrayLayerCongBeKyThuat.push(el[0]);
+					fromDegreesArrayLayerCongBeKyThuat.push(el[1]);
+					// console.log(typeof element.properties.chieusauch, -element.properties.chieusauch / 100);
+					if (typeof element.properties.ChieuSauCh == "number") {
+						fromDegreesArrayLayerCongBeKyThuat.push(-15 + parseFloat((-element.properties.dosau / 100).toFixed(1)));
+					} else {
+						fromDegreesArrayLayerCongBeKyThuat.push(-15 + parseFloat((-parseFloat(element.properties.dosau) / 100).toFixed(1)));
 					}
-
-				}
+				});
+			});
+			return fromDegreesArrayLayerCongBeKyThuat
+		}
+		const btCongBeKyThuat = async (e) => {
+			if (e.checked) {
+				fetch("./uploads/geojson/CongBeKyThuat.geojson")
+					.then((res) => res.json())
+					.then((data) => {
+						data.features.forEach(element => {
+							if (element.geometry) {
+								// if (element.properties.duongkinho.indexOf('x') == -1) {
+								// console.log(element.properties.DuongKinhO, parseFloat(element.properties.DuongKinhO), parseFloat(element.properties.DuongKinhO) ? false : true);
+								// console.log(lapDuongOng(element));
+								if (element.properties.gid < 100) {
+									entities.add({
+										id: 'congBeKyThuat' + element.properties.gid,
+										parent: parentLayerCongBeKyThuat,
+										name: element.properties.gid,
+										polylineVolume: {
+											positions: Cesium.Cartesian3.fromDegreesArrayHeights(lapCongBeKyThuat(element)),
+											shape: computeCircle((600 / 1000)),
+											material: Cesium.Color.DARKORANGE,
+										},
+										moTa: {
+											"Phân loại": element.properties.phanloai,
+											"Độ sâu": element.properties.dosau,
+											"Chiều dài": element.properties.chieudai,
+										}
+									});
+								}
+							}
+						});
+					});
+			} else {
+				fetch("./uploads/geojson/CongBeKyThuat.geojson")
+					.then((res) => res.json())
+					.then((data) => {
+						data.features.forEach(element => {
+							if (element.geometry) {
+								if (element.properties.gid < 100) {
+									entities.removeById('congBeKyThuat' + element.properties.gid)
+								}
+							}
+						});
+					});
 			}
-
 		}
 
-
-		window.addEventListener("load", function () {
-
-			initialise();
-
-
-			// Set up big img element
-			var el = document.createElement("div"), prevBtn = document.createElement("div"), nextBtn = document.createElement("div"), counter = document.createElement("span");
-
-
-			// image
-			el.innerHTML = "<img class='img-enlarged' id='enlarged-image' />";
-			el.classList.add("img-enlarged__cont");
-			el.onclick = function () {
-				unenlargeImg();
-			}
-
-
-			// prev / next buttons
-			prevBtn.innerHTML = "<span></span>";
-			prevBtn.classList.add("img-enlarged__nav");
-			prevBtn.classList.add("prev");
-			prevBtn.onclick = function (event) {
-				event.stopPropagation();
-				prevImage();
-			}
-
-			nextBtn.innerHTML = "<span></span>";
-			nextBtn.classList.add("img-enlarged__nav");
-			nextBtn.classList.add("next");
-			nextBtn.onclick = function (event) {
-				event.stopPropagation();
-				nextImage();
-			}
-
-
-			// counter
-			counter.innerHTML = "1/1";
-			counter.classList.add("img-enlarged__counter");
-			counter.classList.add("nosel");
-
-
-			el.appendChild(prevBtn);
-			el.appendChild(counter);
-			el.appendChild(nextBtn);
-			document.body.appendChild(el);
-
-			gallery_counter = counter;
-			gallery_buttons = [prevBtn, nextBtn];
-
+		const tileset = viewer.scene.primitives.add(
+			new Cesium.Cesium3DTileset({
+				url: Cesium.IonResource.fromAssetId(1606278),
+			})
+		);
+		tileset.readyPromise.then(function (tileset) {
+			var boundingSphere = tileset.boundingSphere;
+			viewer.camera.viewBoundingSphere(boundingSphere, new Cesium.HeadingPitchRange(0, -2.0, 0));
+			viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+			// Position tileset
+			var cartographic = Cesium.Cartographic.fromCartesian(boundingSphere.center);
+			var surface = Cesium.Cartesian3.fromRadians(cartographic.longitude, cartographic.latitude, 0.0);
+			var offset = Cesium.Cartesian3.fromRadians(cartographic.longitude, cartographic.latitude, -15);
+			var translation = Cesium.Cartesian3.subtract(offset, surface, new Cesium.Cartesian3());
+			tileset.modelMatrix = Cesium.Matrix4.fromTranslation(translation);
+			// console.log(tileset.modelMatrix);
 		});
+
+		const tilesset = viewer.scene.primitives.add(
+			new Cesium.Cesium3DTileset({
+				url: Cesium.IonResource.fromAssetId(1633013),
+			})
+		);
+		tilesset.readyPromise.then(function (tileset) {
+			var boundingSphere = tileset.boundingSphere;
+			viewer.camera.viewBoundingSphere(boundingSphere, new Cesium.HeadingPitchRange(0, -2.0, 0));
+			viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+			// Position tileset
+			var cartographic = Cesium.Cartographic.fromCartesian(boundingSphere.center);
+			var surface = Cesium.Cartesian3.fromRadians(cartographic.longitude, cartographic.latitude, 0.0);
+			var offset = Cesium.Cartesian3.fromRadians(cartographic.longitude, cartographic.latitude, -20);
+			var translation = Cesium.Cartesian3.subtract(offset, surface, new Cesium.Cartesian3());
+			tileset.modelMatrix = Cesium.Matrix4.fromTranslation(translation);
+			tileset.style = new Cesium.Cesium3DTileStyle({
+				color: {
+					conditions: [
+						["${Id} === 1", "color('#86d3bb')"],
+						["${Id} === 2", "color('#72c4a9')"],
+						["${Id} === 3", "color('#58b596')"],
+						["${Id} === 4", "color('#44aa89')"],
+						["${Id} === 5", "color('#52b092')"],
+						["${Id} === 6", "color('#9cb075')"],
+						["${Id} === 7", "color('#6d863d')"],
+						["${Id} === 8", "color('#627835')"],
+						["${Id} === 9", "color('#5b6f30')"],
+						["${Id} === 10", "color('#53672b')"],
+						["${Id} === 11", "color('#c98b5d')"],
+						["${Id} === 12", "color('#ea8c40')"],
+						["${Id} === 13", "color('#c87330')"],
+						["${Id} === 14", "color('#a7551a')"],
+						["${Id} === 15", "color('#a8612e')"],
+						["${Id} === 16", "color('#959297')"],
+						["${Id} === 17", "color('#4d7cb5')"],
+						["${Id} === 18", "color('#3a618f')"],
+						["${Id} === 19", "color('#284569')"],
+					],
+				},
+			})
+			// console.log(tileset.modelMatrix);
+		});
+
+		const btFanceHaNoi = async (e) => {
+			if (e.checked) {
+				tileset.readyPromise.then(function (tileset) {
+					tileset.show = e.checked
+				});
+			} else {
+				tileset.readyPromise.then(function (tileset) {
+					tileset.show = e.checked
+				});
+			}
+		}
+
+		const bt3DMC3 = async (e) => {
+			if (e.checked) {
+				tilesset.readyPromise.then(function (tileset) {
+					tileset.show = e.checked
+				});
+			} else {
+				tilesset.readyPromise.then(function (tileset) {
+					tileset.show = e.checked
+
+				});
+			}
+		}
+
+		btFanceHaNoi({ checked: false });
+		bt3DMC3({ checked: false });
 	</script>
 	</div>
 </body>

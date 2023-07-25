@@ -12,7 +12,7 @@ const layLoaiDuLieuSHP = async (req) => {
       ? req.files[1].path
       : req.files[0].path
   );
-  // console.log(JSON.stringify(geoJSON.features[0].geometry.type));
+  console.log(JSON.stringify(geoJSON.features[0]));
   return geoJSON.features[0].geometry.type;
 };
 
@@ -252,18 +252,26 @@ exports.suaDuLieu = async (req, res, next) => {
                   : `'${req.files[0].path}'`
               }, "loaiDuLieu" = '${loaiDuLieu}'`
             : ``
-        } "cheDoMacDinh" = ${
+        }, "cheDoMacDinh" = ${
           req.body.cheDoMacDinh == "true" ? 1 : 0
         }, "colorStyle" = '${req.body.colorStyle}' where "gid" = ${
           req.params.gid
         }`,
-        function (err, result, row) {
+        async function (err, result, row) {
           done();
           if (err) {
             res.end();
             return console.error("error running query", err);
           } else {
             if (req.files.length > 0 && req.body.loaiFile == "0") {
+              const geoJSON = await shapefileToGeojson.parseFiles(
+                req.files[1].path.indexOf(".shp") != -1
+                  ? req.files[1].path
+                  : req.files[0].path,
+                req.files[1].path.indexOf(".dbf") != -1
+                  ? req.files[1].path
+                  : req.files[0].path
+              );
               const ds = fs.createWriteStream(
                 `app/public/uploads/geojson/${req.files[0].originalname
                   .replace(".shp", "")
@@ -317,9 +325,6 @@ exports.xoaDuLieu = (req, res, next) => {
                       res.end();
                       return console.error("error running query", err);
                     } else {
-                      await result.rows.forEach(async (element) => {
-                        element.geom = await shpToGeojson(element);
-                      });
                       await setTimeout(() => {
                         res.json(result.rows[0]);
                       }, 500);

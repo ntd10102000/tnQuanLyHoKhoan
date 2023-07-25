@@ -2,8 +2,8 @@ var pg = require("pg");
 
 var config_db = {
   user: "postgres",
-  database: "tntainguyenmoitruong",
-  password: "nguyentienduong1",
+  database: "tnquanlycongtrinhngamhanoi",
+  password: "admin_humg",
   host: "localhost",
   port: "5432",
   max: 10,
