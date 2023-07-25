@@ -956,7 +956,11 @@
 
 		const btCau = async (e) => {
 			if (e.checked) {
+<<<<<<< HEAD
 				cauSource.load("http://103.163.119.33:33123/uploads/geojson/Cau.geojson", {
+=======
+				cauSource.load("http://localhost:4320/uploads/geojson/Cau.geojson", {
+>>>>>>> 22aa39f2e38de00f17cf7a53543de1c4261f8804
 					stroke: Cesium.Color.fromCssColorString('#f8e71c'),
 					strokeWidth: 3,
 				}).then((dataSource) => {
@@ -1328,8 +1332,13 @@
 							position: Cesium.Cartesian3.fromDegrees(element.geometry.coordinates[0], element.geometry.coordinates[1], -15 - (element.properties.cdcoc / 2) + element.properties.cdodaucoc),
 							cylinder: {
 								length: element.properties.cdcoc,
+<<<<<<< HEAD
 								topRadius: 0.25,
 								bottomRadius: 0.25,
+=======
+								topRadius: 1,
+								bottomRadius: 1,
+>>>>>>> 22aa39f2e38de00f17cf7a53543de1c4261f8804
 								material: Cesium.Color.fromCssColorString('#702af7')
 							},
 							moTa: {
@@ -1472,7 +1481,11 @@
 					if (ent.moTa.tenhokhoan) {
 						infoBox.innerHTML = `
 				<div class="text-center">
+<<<<<<< HEAD
 					<img src="http://103.163.119.33:33123/img/${ent.moTa.tenhokhoan}.jpg" style="max-width: 200px;">
+=======
+					<img src="http://localhost:4320/img/${ent.moTa.tenhokhoan}.jpg" style="max-width: 200px;">
+>>>>>>> 22aa39f2e38de00f17cf7a53543de1c4261f8804
 				</div>
 				<table class="table table-dark table-striped" style="margin: 0;margin-top: 8px;width: 400px;">
 					<tbody>
@@ -1490,7 +1503,11 @@
 					if (ent.moTa.TenMatCat) {
 						infoBox.innerHTML = `
 				<div class="text-center">
+<<<<<<< HEAD
 					<img src="http://103.163.119.33:33123/img/${ent.moTa.MaMatCat}.jpg" style="max-width: 400px;">
+=======
+					<img src="http://localhost:4320/img/${ent.moTa.MaMatCat}.jpg" style="max-width: 400px;">
+>>>>>>> 22aa39f2e38de00f17cf7a53543de1c4261f8804
 				</div>
 				<table class="table table-dark table-striped" style="margin: 0;margin-top: 8px;width: 400px;">
 					<tbody>
