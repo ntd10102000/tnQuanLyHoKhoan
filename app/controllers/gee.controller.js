@@ -43,6 +43,16 @@ exports.homeUser = (req, res) => {
               ST_AsGeoJSON(lg."geom")::json As geometry,
               row_to_json((lg.*)) As properties FROM cautrucnen As lg) As f)
                As fc;
+               SELECT row_to_json(fc) FROM (SELECT 'FeatureCollection' As type, 
+               array_to_json(array_agg(f)) As features FROM (SELECT 'Feature' As type, 
+               ST_AsGeoJSON(lg."geom")::json As geometry,
+               row_to_json((lg.*)) As properties FROM truduongtc As lg) As f)
+                As fc;
+                SELECT row_to_json(fc) FROM (SELECT 'FeatureCollection' As type, 
+                array_to_json(array_agg(f)) As features FROM (SELECT 'Feature' As type, 
+                ST_AsGeoJSON(lg."geom")::json As geometry,
+                row_to_json((lg.*)) As properties FROM khaithacnuoc As lg) As f)
+                 As fc;
               `,
         function (err, result, row) {
           done();
@@ -61,6 +71,9 @@ exports.homeUser = (req, res) => {
                 phuongXa: result[3].rows[0].row_to_json,
                 cocKhoanNhoi: result[4].rows[0].row_to_json,
                 cauTrucNen: result[5].rows[0].row_to_json,
+                truDuongTrenCao: result[6].rows[0].row_to_json,
+                khaiThacNuoc: result[7].rows[0].row_to_json,
+
                 // congBeKyThuat: result[8].rows[0].row_to_json,
               },
             });

@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // set port, listen for requests
-const PORT = process.env.PORT || 33123;
+const PORT = process.env.PORT || 4320;
 
 app.set("views", path.join(__dirname, "app/views"));
 app.set("view engine", "ejs");
