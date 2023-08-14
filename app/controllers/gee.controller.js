@@ -193,8 +193,8 @@ exports.searchHoKhoanQ = (req, res) => {
     } else {
       client.query(
         `select "tenhokhoan" as display_name, ST_AsGeoJSON(hokhoan."geom")::json as boundingbox from hokhoan where "tenhokhoan" ilike '%${req.query.q}%';
-        select "maduongong" as display_name, ST_AsGeoJSON(duongongcapnuoc."geom")::json as boundingbox from duongongcapnuoc where "maduongong" ilike '%${req.query.q}%';
-        select "matuyentho" as display_name, ST_AsGeoJSON(duongongthoatnuoc."geom")::json as boundingbox from duongongthoatnuoc where "matuyentho" ilike '%${req.query.q}%';
+        select "ma" as display_name, ST_AsGeoJSON(duongongcapnuoc."geom")::json as boundingbox from duongongcapnuoc where "ma" ilike '%${req.query.q}%';
+        select "ma" as display_name, ST_AsGeoJSON(duongongthoatnuoc."geom")::json as boundingbox from duongongthoatnuoc where "ma" ilike '%${req.query.q}%';
         `,
         function (err, result, row) {
           done();
