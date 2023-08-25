@@ -2148,6 +2148,1626 @@ exports.cauHinhTaiSan = (req, res) => {
         },
       ],
     },
+    {
+      id: "KCHT_Chieu_Sang_ChieuSang",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_DenTinHieuGiaoThong_Becap",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_DenTinHieuGiaoThong_DenTinHieuGiaoThong",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_Dien_Luc_Dienluc",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_Dien_Luc_TramBienAp",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_VienThong_ThongTin_BeCapVTTT",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_VienThong_ThongTin_CongBeThanhPho",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_VienThong_ThongTin_Ganivo",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_VienThong_ThongTin_Thietbi",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "KCHT_VienThong_ThongTin_Vienthongthongtin",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "objectid_1",
+          alias: "objectid_1",
+        },
+        {
+          name: "objectid",
+          alias: "objectid",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "maquan",
+          alias: "Mã quận",
+        },
+        {
+          name: "mahieutuye",
+          alias: "Mã hiệu tuyến",
+        },
+        {
+          name: "mahieungan",
+          alias: "mahieungan",
+        },
+        {
+          name: "mahieubang",
+          alias: "mahieubang",
+        },
+        {
+          name: "mahieubans",
+          alias: "mahieubans",
+        },
+        {
+          name: "tencongtri",
+          alias: "Tên công trình",
+        },
+        {
+          name: "ydiemcuoi",
+          alias: "Tọa độ Y điểm cuối",
+        },
+        {
+          name: "diembatdau",
+          alias: "Điểm bắt đầu",
+        },
+        {
+          name: "diemketthu",
+          alias: "Điểm kết thúc",
+        },
+        {
+          name: "hangmuc",
+          alias: "Hạng mục",
+        },
+        {
+          name: "diadiem",
+          alias: "Địa điểm",
+        },
+        {
+          name: "machusohuu",
+          alias: "Mã chủ sở hữu",
+        },
+        {
+          name: "tenchusohu",
+          alias: "Tên chủ sở hữu",
+        },
+        {
+          name: "diachichus",
+          alias: "Địa chỉ chủ sở hữu",
+        },
+        {
+          name: "ttllchusoh",
+          alias: "Số điện thoại chủ sở hữu",
+        },
+        {
+          name: "madonviql",
+          alias: "Mã đơn vị quản lý",
+        },
+        {
+          name: "tendonviql",
+          alias: "Tên đơn vị quản lý",
+        },
+        {
+          name: "diachidonv",
+          alias: "Địa chỉ đơn vị quản lý",
+        },
+
+        {
+          name: "madonvivh",
+          alias: "Mã đơn vị vh",
+        },
+        {
+          name: "tendonvivh",
+          alias: "Tên đơn vị vh",
+        },
+        {
+          name: "diachido_1",
+          alias: "diachido_1",
+        },
+        {
+          name: "ttlldonviv",
+          alias: "ttlldonviv",
+        },
+        {
+          name: "tendonvisd",
+          alias: "Tên đơn vị sử dụng",
+        },
+        {
+          name: "diachido_2",
+          alias: "diachido_2",
+        },
+        {
+          name: "ttlldonvis",
+          alias: "SĐT đơn vị sử dụng",
+        },
+        {
+          name: "loaicap",
+          alias: "Loại cáp",
+        },
+        {
+          name: "chatlieuca",
+          alias: "Chất liệu cáp",
+        },
+        {
+          name: "loaiongbao",
+          alias: "Loại ống bao",
+        },
+        {
+          name: "csdotrenvi",
+          alias: "csdotrenvi",
+        },
+        {
+          name: "csdoduoilo",
+          alias: "csdoduoilo",
+        },
+        {
+          name: "x",
+          alias: "x",
+        },
+        {
+          name: "y",
+          alias: "y",
+        },
+        {
+          name: "shape_leng",
+          alias: "shape_leng",
+        },
+        {
+          name: "shape_Leng",
+          alias: "shape_Leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
   ];
 
   res.json(a);

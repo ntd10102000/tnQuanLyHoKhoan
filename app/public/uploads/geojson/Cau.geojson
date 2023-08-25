@@ -33,7 +33,7 @@
     "properties": {
     "gid": 1,
     "shape_leng": 0.00281006464857,
-    "tengoi": null,
+    "tengoi": "Cầu vượt Trần Khát Chân - Phố Huế",
     "ma": "K16HC2",
     "quanhuyen": "Q. Hai Bà Trưng",
     "phuongxa": "Phường Cầu Dền",
@@ -76,6 +76,266 @@
     [
     105.85232341100004,
     21.008675593000078
+    ]
+    ]
+    ]
+    }
+    }
+    },
+    {
+    "type": "Feature",
+    "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.859111218,
+    21.009131762
+    ],
+    [
+    105.859825056,
+    21.009103209
+    ],
+    [
+    105.860567448,
+    21.009074655
+    ],
+    [
+    105.861267009,
+    21.008960441
+    ],
+    [
+    105.862023678,
+    21.008846227
+    ]
+    ]
+    ]
+    },
+    "properties": {
+    "gid": 2,
+    "shape_leng": 0,
+    "tengoi": "Cầu vượt Trần Khát Chân - Lò Đúc",
+    "ma": null,
+    "quanhuyen": null,
+    "phuongxa": null,
+    "xdiemdau": 0,
+    "ydiemdau": 0,
+    "xdiemcuoi": 0,
+    "ydiemcuoi": 0,
+    "chudautu": null,
+    "dvccaptl": null,
+    "dvquanlytl": null,
+    "ngaynl": null,
+    "nguoinl": null,
+    "capct": null,
+    "chucnang": null,
+    "solanduong": 0,
+    "sotrucau": 0,
+    "chieudai": 0,
+    "chieurong": 0,
+    "cctrucau": 0,
+    "geom": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.8591112175723,
+    21.009131762073135
+    ],
+    [
+    105.85982505587405,
+    21.009103208541067
+    ],
+    [
+    105.86056744770787,
+    21.009074655008998
+    ],
+    [
+    105.86126700924358,
+    21.008960440880717
+    ],
+    [
+    105.86202367784344,
+    21.008846226752436
+    ]
+    ]
+    ]
+    }
+    }
+    },
+    {
+    "type": "Feature",
+    "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.85428805,
+    21.009129383
+    ],
+    [
+    105.854442715,
+    21.008570209
+    ]
+    ]
+    ]
+    },
+    "properties": {
+    "gid": 3,
+    "shape_leng": 0,
+    "tengoi": "CV đi bộ Tràn Khát Chân - Chùa Vua",
+    "ma": null,
+    "quanhuyen": null,
+    "phuongxa": null,
+    "xdiemdau": 0,
+    "ydiemdau": 0,
+    "xdiemcuoi": 0,
+    "ydiemcuoi": 0,
+    "chudautu": null,
+    "dvccaptl": null,
+    "dvquanlytl": null,
+    "ngaynl": null,
+    "nguoinl": null,
+    "capct": null,
+    "chucnang": null,
+    "solanduong": 0,
+    "sotrucau": 0,
+    "chieudai": 0,
+    "chieurong": 0,
+    "cctrucau": 0,
+    "geom": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.8542880501135,
+    21.00912938261213
+    ],
+    [
+    105.85444271507887,
+    21.008570209275756
+    ]
+    ]
+    ]
+    }
+    }
+    },
+    {
+    "type": "Feature",
+    "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.845400763,
+    21.008197427
+    ],
+    [
+    105.845467388,
+    21.007692981
+    ]
+    ]
+    ]
+    },
+    "properties": {
+    "gid": 4,
+    "shape_leng": 0,
+    "tengoi": "CV đi bộ Đại Cồ Việt - CV Thống Nhất",
+    "ma": null,
+    "quanhuyen": null,
+    "phuongxa": null,
+    "xdiemdau": 0,
+    "ydiemdau": 0,
+    "xdiemcuoi": 0,
+    "ydiemcuoi": 0,
+    "chudautu": null,
+    "dvccaptl": null,
+    "dvquanlytl": null,
+    "ngaynl": null,
+    "nguoinl": null,
+    "capct": null,
+    "chucnang": null,
+    "solanduong": 0,
+    "sotrucau": 0,
+    "chieudai": 0,
+    "chieurong": 0,
+    "cctrucau": 0,
+    "geom": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.84540076325673,
+    21.008197427051506
+    ],
+    [
+    105.84546738816489,
+    21.007692981318268
+    ]
+    ]
+    ]
+    }
+    }
+    },
+    {
+    "type": "Feature",
+    "geometry": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.841057057,
+    21.001661048
+    ],
+    [
+    105.841592436,
+    21.001625356
+    ],
+    [
+    105.841610282,
+    21.002083402
+    ]
+    ]
+    ]
+    },
+    "properties": {
+    "gid": 5,
+    "shape_leng": 0,
+    "tengoi": "CV đi bộ Giải Phóng - Bv Bạch Mai",
+    "ma": null,
+    "quanhuyen": null,
+    "phuongxa": null,
+    "xdiemdau": 0,
+    "ydiemdau": 0,
+    "xdiemcuoi": 0,
+    "ydiemcuoi": 0,
+    "chudautu": null,
+    "dvccaptl": null,
+    "dvquanlytl": null,
+    "ngaynl": null,
+    "nguoinl": null,
+    "capct": null,
+    "chucnang": null,
+    "solanduong": 0,
+    "sotrucau": 0,
+    "chieudai": 0,
+    "chieurong": 0,
+    "cctrucau": 0,
+    "geom": {
+    "type": "MultiLineString",
+    "coordinates": [
+    [
+    [
+    105.84105705719057,
+    21.001661047668488
+    ],
+    [
+    105.84159243591688,
+    21.0016253557534
+    ],
+    [
+    105.84161028187442,
+    21.002083401997023
     ]
     ]
     ]

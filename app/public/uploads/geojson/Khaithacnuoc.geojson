@@ -6,8 +6,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589608.393,
-    2323516.538000001,
+    105.862243496,
+    21.01018446,
     6.28
     ]
     },
@@ -20,25 +20,25 @@
     "luuluong": 3638.4,
     "coquancp": "BTNMT",
     "nhucau": 3360,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1962,
     "chieusau": 62,
     "chatlieu": null,
     "duongkinh": 400,
     "ongloc": 44,
     "tchuanuoc": "qp1",
-    "tinhtrang": "Đang khai thác",
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "tinhtrang": "\u001aang khai thác",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589608.3930000002,
-    2323516.5380000006,
+    105.86224349622194,
+    21.010184459517763,
     6.279999999998836
     ]
     }
@@ -49,8 +49,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589737.355,
-    2323370.581,
+    105.863476719,
+    21.008859504,
     6.3
     ]
     },
@@ -63,10 +63,10 @@
     "luuluong": 3333.6,
     "coquancp": "BTNMT",
     "nhucau": 2352,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1970,
     "chieusau": 74.2,
     "chatlieu": null,
@@ -74,14 +74,14 @@
     "ongloc": 48.64,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589737.3550000004,
-    2323370.5810000002,
+    105.86347671919776,
+    21.008859503849912,
     6.30000000000291
     ]
     }
@@ -92,8 +92,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589703.365,
-    2323477.549000001,
+    105.863155246,
+    21.009827577,
     6.28
     ]
     },
@@ -106,10 +106,10 @@
     "luuluong": 6648,
     "coquancp": "BTNMT",
     "nhucau": 5760,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1974,
     "chieusau": 74.5,
     "chatlieu": null,
@@ -117,14 +117,14 @@
     "ongloc": 58.8,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589703.3650000002,
-    2323477.5490000006,
+    105.86315524555911,
+    21.00982757680936,
     6.279999999998836
     ]
     }
@@ -135,8 +135,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589558.408,
-    2323464.552999999,
+    105.861759867,
+    21.009717231,
     6.29
     ]
     },
@@ -149,10 +149,10 @@
     "luuluong": 6861.6,
     "coquancp": "BTNMT",
     "nhucau": 6720,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1977,
     "chieusau": 74,
     "chatlieu": null,
@@ -160,14 +160,14 @@
     "ongloc": 52.6,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589558.4079999998,
-    2323464.5529999994,
+    105.86175986669114,
+    21.009717231392106,
     6.289999999993597
     ]
     }
@@ -178,8 +178,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589566.406,
-    2323404.571,
+    105.861833707,
+    21.009174928,
     6.31
     ]
     },
@@ -192,10 +192,10 @@
     "luuluong": 4508,
     "coquancp": "BTNMT",
     "nhucau": 4080,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1984,
     "chieusau": 66,
     "chatlieu": null,
@@ -203,14 +203,14 @@
     "ongloc": 44,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589566.4060000004,
-    2323404.5710000005,
+    105.8618337069159,
+    21.009174927643173,
     6.309999999997672
     ]
     }
@@ -221,8 +221,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589630.387,
-    2323392.573999999,
+    105.862448675,
+    21.009063421,
     6.3
     ]
     },
@@ -235,10 +235,10 @@
     "luuluong": 4346.4,
     "coquancp": "BTNMT",
     "nhucau": 4080,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1987,
     "chieusau": 71.5,
     "chatlieu": null,
@@ -246,14 +246,14 @@
     "ongloc": 50.5,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589630.3870000001,
-    2323392.573999999,
+    105.86244867482796,
+    21.009063420823722,
     6.30000000000291
     ]
     }
@@ -264,8 +264,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590263.2,
-    2323319.596000001,
+    105.868533436,
+    21.008373129,
     7.31
     ]
     },
@@ -278,10 +278,10 @@
     "luuluong": 2664,
     "coquancp": "BTNMT",
     "nhucau": 2160,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Thanh Lương",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "Thanh L\u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1990,
     "chieusau": 69,
     "chatlieu": null,
@@ -289,14 +289,14 @@
     "ongloc": 48.6,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590263.2000000002,
-    2323319.596000001,
+    105.86853343557783,
+    21.008373129390755,
     7.309999999997672
     ]
     }
@@ -307,8 +307,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590462.141,
-    2323023.683,
+    105.870432019,
+    21.005689897,
     2.61
     ]
     },
@@ -321,10 +321,10 @@
     "luuluong": 2050.3,
     "coquancp": "BTNMT",
     "nhucau": 2160,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Thanh Lương",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "Thanh L\u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1991,
     "chieusau": 73,
     "chatlieu": null,
@@ -332,14 +332,14 @@
     "ongloc": 51.6,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590462.1409999998,
-    2323023.683,
+    105.87043201865167,
+    21.005689896617806,
     2.610000000000582
     ]
     }
@@ -350,8 +350,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590809.038,
-    2322803.748,
+    105.873758021,
+    21.003685773,
     1.54
     ]
     },
@@ -364,10 +364,10 @@
     "luuluong": 2908.8,
     "coquancp": "BTNMT",
     "nhucau": 4080,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Thanh Lương",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "Thanh L\u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1991,
     "chieusau": 71.5,
     "chatlieu": null,
@@ -375,14 +375,14 @@
     "ongloc": 48.5,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590809.0379999997,
-    2322803.7479999997,
+    105.87375802139374,
+    21.00368577330865,
     1.539999999993597
     ]
     }
@@ -393,8 +393,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589990.28,
-    2323421.566,
+    105.865912879,
+    21.009307768,
     6.95
     ]
     },
@@ -407,10 +407,10 @@
     "luuluong": 5806,
     "coquancp": "BTNMT",
     "nhucau": 6480,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Thanh Lương",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "Thanh L\u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1991,
     "chieusau": 70,
     "chatlieu": null,
@@ -418,14 +418,14 @@
     "ongloc": 48.6,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589990.2800000003,
-    2323421.5659999996,
+    105.86591287924924,
+    21.009307768488693,
     6.94999999999709
     ]
     }
@@ -436,8 +436,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590606.098,
-    2322834.739,
+    105.871807145,
+    21.003975776,
     7.92
     ]
     },
@@ -450,10 +450,10 @@
     "luuluong": 5565.8,
     "coquancp": "BTNMT",
     "nhucau": 5040,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 2007,
     "chieusau": 70,
     "chatlieu": null,
@@ -461,14 +461,14 @@
     "ongloc": 49.6,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590606.0980000002,
-    2322834.739,
+    105.87180714463842,
+    21.003975775800782,
     7.919999999998254
     ]
     }
@@ -479,8 +479,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589990.28,
-    2323521.536,
+    105.865918091,
+    21.010210958,
     6.95
     ]
     },
@@ -493,10 +493,10 @@
     "luuluong": 2040,
     "coquancp": "BTNMT",
     "nhucau": 1440,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1995,
     "chieusau": 64.5,
     "chatlieu": null,
@@ -504,14 +504,14 @@
     "ongloc": 43.1,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589990.2800000003,
-    2323521.5360000003,
+    105.86591809144097,
+    21.01021095756562,
     6.94999999999709
     ]
     }
@@ -522,8 +522,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589951.292,
-    2323728.475,
+    105.865553753,
+    21.012082477,
     6.27
     ]
     },
@@ -536,10 +536,10 @@
     "luuluong": 4736.7,
     "coquancp": "BTNMT",
     "nhucau": 1680,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1995,
     "chieusau": 64.5,
     "chatlieu": null,
@@ -547,14 +547,14 @@
     "ongloc": 43.1,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589951.2920000004,
-    2323728.4749999996,
+    105.86555375306689,
+    21.01208247714794,
     6.270000000004074
     ]
     }
@@ -565,8 +565,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589875.314,
-    2323865.435,
+    105.864829853,
+    21.013323573,
     6.47
     ]
     },
@@ -579,10 +579,10 @@
     "luuluong": 3257.5,
     "coquancp": "BTNMT",
     "nhucau": 4080,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1992,
     "chieusau": 65.5,
     "chatlieu": null,
@@ -590,14 +590,14 @@
     "ongloc": 44.1,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589875.3140000002,
-    2323865.4350000005,
+    105.86482985276356,
+    21.013323572994505,
     6.470000000001164
     ]
     }
@@ -608,8 +608,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590358.171,
-    2323171.639,
+    105.869439444,
+    21.007031732,
     8.55
     ]
     },
@@ -622,10 +622,10 @@
     "luuluong": 0,
     "coquancp": "BTNMT",
     "nhucau": 4320,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Nhà máy nước Lương Yên",
-    "phuongxa": "Thanh Lương",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Nhà máy n\u001a\u001ac L\u001a\u001ang Yên",
+    "phuongxa": "Thanh L\u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1999,
     "chieusau": 71,
     "chatlieu": null,
@@ -633,14 +633,14 @@
     "ongloc": 66,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": "22-24",
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590358.1710000001,
-    2323171.6390000004,
+    105.86943944436888,
+    21.007031732101296,
     8.55000000000291
     ]
     }
@@ -651,8 +651,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589792.339,
-    2324449.262,
+    105.864061874,
+    21.018602272,
     7.12
     ]
     },
@@ -665,10 +665,10 @@
     "luuluong": 3312,
     "coquancp": "BTNMT",
     "nhucau": 0,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Trạm sản xuất nước sạch Vân Đồn",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Tr\u001am s\u001an xu\u001at n\u001a\u001ac s\u001ach Vân \u001a\u001an",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1993,
     "chieusau": 73,
     "chatlieu": null,
@@ -676,14 +676,14 @@
     "ongloc": 55,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": null,
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589792.3389999997,
-    2324449.262,
+    105.86406187363508,
+    21.01860227176784,
     7.119999999995343
     ]
     }
@@ -694,8 +694,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    589833.327,
-    2324208.333000001,
+    105.864443718,
+    21.016423572,
     6.94
     ]
     },
@@ -708,10 +708,10 @@
     "luuluong": 3456,
     "coquancp": "BTNMT",
     "nhucau": 0,
-    "hinhthuc": "Tập trung",
-    "chusohuu": "Trạm sản xuất nước sạch Vân Đồn",
-    "phuongxa": "Bạch Đằng",
-    "quanhuyen": "Hai Bà Trưng",
+    "hinhthuc": "T\u001ap trung",
+    "chusohuu": "Tr\u001am s\u001an xu\u001at n\u001a\u001ac s\u001ach Vân \u001a\u001an",
+    "phuongxa": "B\u001ach \u001a\u001ang",
+    "quanhuyen": "Hai Bà Tr\u001ang",
     "namkt": 1993,
     "chieusau": 72,
     "chatlieu": null,
@@ -719,14 +719,14 @@
     "ongloc": 51,
     "tchuanuoc": "qp1",
     "tinhtrang": null,
-    "mucdich": "Phục vụ cấp nước sinh hoạt cho nhân dân",
+    "mucdich": "Ph\u001ac v\u001a c\u001ap n\u001a\u001ac sinh ho\u001at cho nhân dân",
     "chedokt": null,
-    "tramlap": "Xi măng",
+    "tramlap": "Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    589833.3269999996,
-    2324208.3330000006,
+    105.8644437175013,
+    21.01642357185856,
     6.940000000002328
     ]
     }
@@ -737,8 +737,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590231.208,
-    2321449.149,
+    105.868127903,
+    20.991475948,
     0
     ]
     },
@@ -752,9 +752,9 @@
     "coquancp": "BTNMT",
     "nhucau": 0,
     "hinhthuc": null,
-    "chusohuu": "Dệt Minh Khai",
+    "chusohuu": "D\u001at Minh Khai",
     "phuongxa": null,
-    "quanhuyen": "Vĩnh Tuy",
+    "quanhuyen": "V\u001anh Tuy",
     "namkt": 0,
     "chieusau": 67,
     "chatlieu": null,
@@ -762,14 +762,14 @@
     "ongloc": 0,
     "tchuanuoc": "qp",
     "tinhtrang": null,
-    "mucdich": "Sinh hoạt. Sản xuất",
+    "mucdich": "Sinh ho\u001at. S\u001an xu\u001at",
     "chedokt": "10",
     "tramlap": "Bê tông",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590231.2079999996,
-    2321449.149,
+    105.86812790276345,
+    20.991475948013207,
     0
     ]
     }
@@ -780,8 +780,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    591457.846,
-    2321614.099,
+    105.879937256,
+    20.992905638,
     0
     ]
     },
@@ -795,7 +795,7 @@
     "coquancp": "BTNMT",
     "nhucau": 0,
     "hinhthuc": null,
-    "chusohuu": "ĐH KD&CN Hà Nội",
+    "chusohuu": "\u001aH KD&CN Hà N\u001ai",
     "phuongxa": null,
     "quanhuyen": null,
     "namkt": 0,
@@ -805,14 +805,14 @@
     "ongloc": 0,
     "tchuanuoc": "qp",
     "tinhtrang": null,
-    "mucdich": "Sinh hoạt",
+    "mucdich": "Sinh ho\u001at",
     "chedokt": "6",
     "tramlap": "Bê tông",
     "geom": {
     "type": "Point",
     "coordinates": [
-    591457.8459999999,
-    2321614.0989999995,
+    105.8799372564909,
+    20.99290563784031,
     0
     ]
     }
@@ -823,8 +823,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590986.985,
-    2321329.184,
+    105.87539239,
+    20.990354893,
     0
     ]
     },
@@ -838,7 +838,7 @@
     "coquancp": "BTNMT",
     "nhucau": 0,
     "hinhthuc": null,
-    "chusohuu": "TT VHTT Vĩnh Tuy",
+    "chusohuu": "TT VHTT V\u001anh Tuy",
     "phuongxa": null,
     "quanhuyen": null,
     "namkt": 0,
@@ -848,14 +848,14 @@
     "ongloc": 0,
     "tchuanuoc": "qp",
     "tinhtrang": null,
-    "mucdich": "Sinh hoạt",
+    "mucdich": "Sinh ho\u001at",
     "chedokt": "10",
-    "tramlap": "Láng Xi măng",
+    "tramlap": "Láng Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590986.9850000003,
-    2321329.1840000004,
+    105.87539239035488,
+    20.990354892686202,
     0
     ]
     }
@@ -866,8 +866,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590562.111,
-    2321425.156,
+    105.871310035,
+    20.991242923,
     0
     ]
     },
@@ -881,9 +881,9 @@
     "coquancp": "BTNMT",
     "nhucau": 0,
     "hinhthuc": null,
-    "chusohuu": "Cty CP VPP Cửu Long",
+    "chusohuu": "Cty CP VPP C\u001au Long",
     "phuongxa": null,
-    "quanhuyen": "Vĩnh Tuy",
+    "quanhuyen": "V\u001anh Tuy",
     "namkt": 0,
     "chieusau": 60,
     "chatlieu": null,
@@ -891,14 +891,14 @@
     "ongloc": 0,
     "tchuanuoc": "qp",
     "tinhtrang": null,
-    "mucdich": "Sinh hoạt. Sản xuất",
+    "mucdich": "Sinh ho\u001at. S\u001an xu\u001at",
     "chedokt": "10",
     "tramlap": "Bê tông",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590562.1109999996,
-    2321425.1559999995,
+    105.87131003466835,
+    20.9912429228875,
     0
     ]
     }
@@ -909,8 +909,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590556.112,
-    2321299.193,
+    105.871245721,
+    20.990105192,
     0
     ]
     },
@@ -924,9 +924,9 @@
     "coquancp": "BTNMT",
     "nhucau": 0,
     "hinhthuc": null,
-    "chusohuu": "CT Dệt kim Đông Xuân",
+    "chusohuu": "CT D\u001at kim \u001aông Xuân",
     "phuongxa": null,
-    "quanhuyen": "Vĩnh Tuy",
+    "quanhuyen": "V\u001anh Tuy",
     "namkt": 0,
     "chieusau": 70,
     "chatlieu": null,
@@ -934,14 +934,14 @@
     "ongloc": 0,
     "tchuanuoc": "qp",
     "tinhtrang": null,
-    "mucdich": "Sinh hoạt. Sản xuất",
+    "mucdich": "Sinh ho\u001at. S\u001an xu\u001at",
     "chedokt": "1-2",
     "tramlap": "Bê tông",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590556.1119999997,
-    2321299.193,
+    105.87124572125828,
+    20.990105191754708,
     0
     ]
     }
@@ -952,8 +952,8 @@
     "geometry": {
     "type": "Point",
     "coordinates": [
-    590258.2,
-    2321379.169,
+    105.868383919,
+    20.990842382,
     0
     ]
     },
@@ -967,9 +967,9 @@
     "coquancp": "BTNMT",
     "nhucau": 0,
     "hinhthuc": null,
-    "chusohuu": "Dệt Minh Khai",
+    "chusohuu": "D\u001at Minh Khai",
     "phuongxa": null,
-    "quanhuyen": "Vĩnh Tuy",
+    "quanhuyen": "V\u001anh Tuy",
     "namkt": 0,
     "chieusau": 65,
     "chatlieu": null,
@@ -977,14 +977,14 @@
     "ongloc": 0,
     "tchuanuoc": "qp",
     "tinhtrang": null,
-    "mucdich": "Sinh hoạt. Sản xuất",
+    "mucdich": "Sinh ho\u001at. S\u001an xu\u001at",
     "chedokt": "20",
-    "tramlap": "Láng Xi măng",
+    "tramlap": "Láng Xi m\u001ang",
     "geom": {
     "type": "Point",
     "coordinates": [
-    590258.2000000002,
-    2321379.1689999998,
+    105.8683839188358,
+    20.990842381728466,
     0
     ]
     }
