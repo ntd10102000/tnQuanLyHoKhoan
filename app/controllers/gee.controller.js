@@ -684,6 +684,168 @@ exports.cauHinhTaiSan = (req, res) => {
           alias: "geom",
         },
       ],
+    }, 
+    {
+      id: "CocKN_TT4",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "tengoi",
+          alias: "Tên gọi",
+        },
+        {
+          name: "ma",
+          alias: "Mã",
+        },
+        {
+          name: "quanhuyen",
+          alias: "Quận huyện",
+        },
+        {
+          name: "phuongxa",
+          alias: "Phường xã",
+        },
+        {
+          name: "chudautu",
+          alias: "Chủ đầu tư",
+        },
+        {
+          name: "toadox",
+          alias: "Tọa độ X",
+        },
+        {
+          name: "toadoy",
+          alias: "Tọa độ Y",
+        },
+        {
+          name: "chudautu",
+          alias: "Chủ đầu tư",
+        },
+        {
+          name: "dvccaptl",
+          alias: "Đơn vị cung cấp tài liệu",
+        },
+        {
+          name: "dvquanlytl",
+          alias: "Đơn vị quản lý tài liệu",
+        },
+        {
+          name: "ngaynl",
+          alias: "Ngày nhập dữ liệu",
+        },
+        {
+          name: "dkcoc",
+          alias: "Đường kính cọc",
+        },
+        {
+          name: "cdcoc",
+          alias: "Chiều dài cọc",
+        },
+        {
+          name: "cdodaucoc",
+          alias: "Cao độ đầu cọc",
+        },
+        {
+          name: "cdodaycoc",
+          alias: "Cao độ đáy cọc",
+        },
+        {
+          name: "code",
+          alias: "code",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "Khaithacnuoc",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "sohieu",
+          alias: "Số hiệu",
+        },
+        {
+          name: "luuluong",
+          alias: "Lưu lượng",
+        },
+        {
+          name: "coquancp",
+          alias: "Cơ quan cp",
+        },
+        {
+          name: "nhucau",
+          alias: "Nhu cầu",
+        },
+        {
+          name: "hinhthuc",
+          alias: "Hình thức",
+        },
+        {
+          name: "chusohuu",
+          alias: "Chủ sở hữu",
+        },
+        {
+          name: "phuongxa",
+          alias: "Phường xã",
+        },
+        {
+          name: "quanhuyen",
+          alias: "Quận huyện",
+        },
+        {
+          name: "namkt",
+          alias: "Năm kt",
+        },
+        {
+          name: "chieusau",
+          alias: "Chiều sâu",
+        },
+        {
+          name: "chatlieu",
+          alias: "Chất liệu",
+        },
+        {
+          name: "duongkinh",
+          alias: "Đường kính",
+        },
+        {
+          name: "ongloc",
+          alias: "Ống lọc",
+        },
+        {
+          name: "tchuanuoc",
+          alias: "tchuanuoc",
+        },
+        {
+          name: "tinhtrang",
+          alias: "Tình trạng",
+        },
+        {
+          name: "mucdich",
+          alias: "Mục đích",
+        },
+        {
+          name: "chedokt",
+          alias: "Chế độ kt",
+        },
+        {
+          name: "tramlap",
+          alias: "Trạm lắp",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
     },
     {
       id: "CongTrinhCongCongNgam",
@@ -1221,6 +1383,31 @@ exports.cauHinhTaiSan = (req, res) => {
         {
           name: "shape_leng",
           alias: "shape_leng",
+        },
+        {
+          name: "geom",
+          alias: "geom",
+        },
+      ],
+    },
+    {
+      id: "TruDuongTC",
+      cauHinh: [
+        {
+          name: "gid",
+          alias: "gid",
+        },
+        {
+          name: "id",
+          alias: "id",
+        },
+        {
+          name: "buff_dist",
+          alias: "Buff Dist",
+        },
+        {
+          name: "orig_fid",
+          alias: "Orig Fid",
         },
         {
           name: "geom",
