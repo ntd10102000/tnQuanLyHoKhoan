@@ -80,6 +80,7 @@ exports.themMoiDuLieu = async (req, res, next) => {
   //   res.redirect("/login");
   // }
 };
+
 exports.kiemTraTaiKhoan = (req, res, next) => {
   if (req.session.User) {
     pool_db.connect(function (err, client, done) {
@@ -105,6 +106,7 @@ exports.kiemTraTaiKhoan = (req, res, next) => {
     res.redirect("/login");
   }
 };
+
 const shpToGeojson = async (req) => {
   const geoJSON = await shapefileToGeojson.parseFiles(
     req.duongDanFileDuLieuSHP,
@@ -176,6 +178,7 @@ exports.danhSachDuLieu = (req, res, next) => {
     res.redirect("/login");
   }
 };
+
 exports.danhSachLopDuLieu = (req, res, next) => {
   if (req.session.User) {
     // console.log(req.body);
@@ -206,6 +209,7 @@ exports.danhSachLopDuLieu = (req, res, next) => {
     res.redirect("/login");
   }
 };
+
 exports.suaDuLieu = async (req, res, next) => {
   // if (req.session.User) {
   if (req.files.length > 0 && req.body.loaiFile == "0") {
@@ -399,5 +403,159 @@ exports.SearchData = (req, res) => {
       }
       res.json(result.rows);
     });
+  });
+};
+
+exports.themMoiDuLieu3D = async (req, res, next) => {
+  await pool_db.connect(function (err, client, done) {
+    if (err) {
+      return console.log("error:" + err);
+    } else {
+      client.query(
+        `insert into dulieu3d("ten", "duongdanfile", "iddanhmuc", "chedomacdinh", "ma") values('${req.body.ten}', '${req.file.path}', '${req.body.iddanhmuc}', ${
+          req.body.chedomacdinh == "true" ? 1 : 0
+        }, '${req.body.ma}')`,
+        async function (err, result, row) {
+          done();
+          if (err) {
+            res.end();
+            return console.error("error running query", err);
+          } else {
+            res.json(result.rows);
+          }
+        }
+      );
+    }
+  });
+};
+
+exports.listDuLieu3D = (req, res) => {
+  pool_db.connect(function (err, client, done) {
+    if (err) {
+      return console.error("error", err);
+    }
+    client.query(
+      `select * from dulieu3d where "status" = 1`,
+      function (err, result) {
+        done();
+
+        if (err) {
+          res.end();
+          return console.error("error running query", err);
+        }
+        res.json(result.rows);
+      }
+    );
+  });
+};
+
+exports.SearchData3D = (req, res) => {
+  let sqlFilter = `select * from dulieu3d where "ten" like '%${req.query.tenDuLieu}%'`;
+  pool_db.connect(function (err, client, done) {
+    if (err) {
+      return console.error("error", err);
+    }
+    client.query(sqlFilter, function (err, result) {
+      done();
+
+      if (err) {
+        res.end();
+        return console.error("error running query", err);
+      }
+      res.json(result.rows);
+    });
+  });
+};
+
+
+exports.xoaDuLieu3D = (req, res, next) => {
+  // if (req.session.User) {
+  pool_db.connect(function (err, client, done) {
+    if (err) {
+      return console.log("error:" + err);
+    } else {
+      console.log(
+        `update dulieunguoidung set "status" = 0 where "gid" = ${req.params.gid}`
+      );
+      client.query(
+        `update dulieu3d set "status" = 0 where "id" = ${req.params.gid}`,
+        function (err, result, row) {
+          done();
+          if (err) {
+            res.end();
+            return console.error("error running query", err);
+          } else {
+            pool_db.connect(function (err, client, done) {
+              if (err) {
+                return console.log("error:" + err);
+              } else {
+                client.query(
+                  `select * from dulieu3d where "status" = 1`,
+                  async function (err, result, row) {
+                    done();
+                    if (err) {
+                      res.end();
+                      return console.error("error running query", err);
+                    } else {
+                      await setTimeout(() => {
+                        res.json(result.rows[0]);
+                      }, 500);
+                    }
+                  }
+                );
+              }
+            });
+          }
+        }
+      );
+    }
+  });
+  // } else {
+  //   res.redirect("/login");
+  // }
+};
+
+exports.viewDuLieu3D = (req, res) => {
+  pool_db.connect(function (err, client, done) {
+    if (err) {
+      return console.error("error", err);
+    }
+    var gid = req.params.gid;
+    client.query(
+      `select * from dulieu3d where "id" = ${gid}`,
+      function (err, result) {
+        done();
+
+        if (err) {
+          res.end();
+          return console.error("error running query", err);
+        }
+        res.json(result.rows[0]);
+      }
+    );
+  });
+};
+
+exports.suaDuLieu3D = async (req, res, next) => {
+  await pool_db.connect(function (err, client, done) {
+    if (err) {
+      return console.log("error:" + err);
+    } else {
+      client.query(
+        `update dulieu3d set ten = '${req.body.ten}', iddanhmuc = '${req.body.iddanhmuc}', chedomacdinh = 
+        insert into dulieu3d("ten", "duongdanfile", "iddanhmuc", "chedomacdinh", "ma") values('${req.body.ten}', '${req.file.path}', '${req.body.iddanhmuc}', ${
+          req.body.chedomacdinh == "true" ? 1 : 0
+        }, '${req.body.ma}')`,
+        async function (err, result, row) {
+          done();
+          if (err) {
+            res.end();
+            return console.error("error running query", err);
+          } else {
+            res.json(result.rows);
+          }
+        }
+      );
+    }
   });
 };

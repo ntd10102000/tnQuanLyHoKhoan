@@ -440,6 +440,13 @@ exports.taiDuLieuSHP = (req, res) => {
   conshp();
 };
 
+exports.taiDuLieu3D = (req, res) => {
+  res.download(
+    `app/public/uploads/fileImport/${req.params.tenDuLieu}`
+  );
+};
+
+
 exports.cauHinhTaiSan = (req, res) => {
   var a = [
     {

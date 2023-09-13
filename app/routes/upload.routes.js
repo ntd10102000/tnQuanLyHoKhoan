@@ -58,4 +58,17 @@ module.exports = function (app) {
   );
 
   app.get("/quanliTN/api/searchData", controller.SearchData);
+
+
+  app.post(
+    "/quanliTN/api/upLoad/addDuLieu3D",
+    upload.single("kml"),
+    controller.themMoiDuLieu3D
+  );
+  app.get("/quanliTN/api/upLoad/listDuLieu3D", controller.listDuLieu3D);
+  app.get("/quanliTN/api/searchData3D", controller.SearchData3D);
+  app.post("/quanliTN/api/upLoad/deleteDuLieu3D/:gid", controller.xoaDuLieu3D);
+  app.get("/quanliTN/api/upLoad/viewDuLieu/:gid", controller.viewDuLieu);
+
+
 };
